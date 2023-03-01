@@ -1,0 +1,133 @@
+Lesson #1 - Managing and troubleshooting system boot and services
+-----------------------------------------------------------------
+
+Otázka #1:
+Jakým příkazem zobrazíte logy systemd služby httpd?
+journalctl -u httpd
+
+Otázka #2:
+Jaký kernel parametr přidáte do grubu při bootu, abyste se dostali do rescue režimu?
+systemd.unit=rescue.target
+
+Lesson #2 - Software package management
+---------------------------------------
+
+Otázka #1:
+Mějme soubor me.spec s následujícím obsahem 
+---8<---8<---8<---
+Name:               foo
+Version:            1
+Summary:            This is the summary
+License:            GPLv2+
+%description
+This is the description
+%build
+%files
+%changelog
+---8<---8<---8<---
+Doplňte a upravte SPEC soubor tak, abyste s jeho pomocí vybuildili RPM balíček me-1.0-2.x86_64.rpm.
+Uveďte doplněné a modifikované řádky ze SPEC souboru a příkaz, kterým balíček vybuildíte.
+
+Otázka #2:
+Zjistěte, jaké symboly (pro splnění závislostí) poskytuje RPM balíček 'ncurses'. Uveďte jak použitý příkaz, tak textový výstup (stačí jen 3 řádky).
+
+Lesson #3 - Creation and basic management of storage
+----------------------------------------------------
+
+Otázka #1:
+Mějme soubor you.spec s následujícím obsahem
+---8<---8<---8<---
+Release:            1
+Summary:            This is the summary
+License:            GPLv2+
+%description
+This is the description
+%build
+%files
+%changelog
+---8<---8<---8<---
+Doplňte a upravte SPEC soubor tak, abyste s jeho pomocí vybuildili RPM balíček you-2.0-2.x86_64.rpm.
+Uveďte doplněné a modifikované řádky ze SPEC souboru a příkaz, kterým balíček vybuildíte.
+
+Otázka #2:
+Uveďte příklad příkazu dd, kterým vytvoříte soubor o velikosti >= 100MB, který může sloužit jako backend pro loop zařízení.
+dd if=/dev/zero of=disk bs=100M count=1
+
+Lesson #4 - Disk encryption and data backup
+-------------------------------------------
+
+Otázka #1:
+Uveďte příkaz cryptsetup včetně parametrů, kterým naformátujete zařízení /dev/disk0, přičemž místo hesla použijte klíč uložený v souboru /root/disk0key.
+cryptsetup luksFormat /dev/disk0 /root/disk0key
+
+Otázka #2:
+Uveďte příkaz cryptsetup včetně parametrů, kterým připojíte již naformátované zařízení /dev/disk0 pod jménem cdisk0, přičemž místo hesla použijte klíč uložený v souboru /root/disk0key
+cryptsetup luksOpen /dev/disk0 --key-file /root/disk0key
+
+Lesson #5 - Network management, security practices, and troubleshooting
+-----------------------------------------------------------------------
+
+Otázka #1:
+Uveďte příklad dvou virtuálních síťových zařízení.
+virbr0, virbr0-nic
+
+Otázka #2:
+Je nějaký rozdíl v tom, jak pracují příkazy ping a host s překladem DNS doménových jmen?
+ping využíva lokálne nakonfigurované adresy
+
+Lesson #6 - SELinux
+-------------------
+
+Otázka #1:
+V jakém SELinux módu je SELinux politika vyhodnocována, avšak případná zamítnutí přístupu jsou pouze logována?
+Permissive
+
+Otázka #2:
+Jakým příkazem/příkazy zjistíte čísla portů mající SELinux typ traceroute_port_t? Příkaz, čísla portů i protokol.
+
+Lesson #7 - Linux Containers
+----------------------------
+
+Otázka #1:
+Která direktiva dockerfile přidá lokální soubor data.txt do nového image s cestou /data.txt?
+COPY data.txt /data.txt
+
+Otázka #2:
+Jakým příkazem vytvoříte nový image ILI-image předpisem uloženým v souboru muj.dockerfile
+docker build muj.dockerfile  ILI-image
+
+Lesson #8 - Cryptography in GNU/Linux and secured communication
+---------------------------------------------------------------
+
+Otázka #1:
+Z Vašeho lokálního systému se chcete na systém s IP adresou 1.2.3.4 přihlašovat přes SSH bez hesla jako uživatel bob. Váš veřejný klíč je na lokálním systému uložen v souboru /root/.ssh/id_dsa.pub. Uveďte příkaz(y), kterými splníte uvedené zadání. Pro tyto účely předpokládejte, že je Vám heslo uživatele bob známé.
+ssh-copy-id -i /root/.ssh/id_dsa.pub bob@1.2.3.4
+ssh bob@1.2.3.4 'id'
+ssh bob@1.2.3.4 
+
+Otázka #2:
+Spočítejte MD5 součet obrázku https://wis.fit.vutbr.cz/images/fitnewben.png Uveďte použitý příkaz i výsledný hash (či alespoň prvních 8 znaků)
+curl -s 'https://wis.fit.vutbr.cz/images/fitnewben.png' | md5sum
+59b12dcef1261....
+
+Lesson #9 - systemd unit file management
+----------------------------------------
+
+Otázka #1:
+Jaké tři sekce najdete v unit file běžné služby?
+Unit, Service, Install
+
+Otázka #2:
+Jaký příkaz musím zavolat, pokud jsem editoval unit file služby a chci, aby se změny aplikovaly?
+systemctl daemon-reload
+
+Lesson #10 - Containerization of Linux Applications
+---------------------------------------------------
+
+Otázka #1:
+V jakém adresáři ukládá podman volumes vytvořené a spravované pomocí příkazu “podman volume”?
+/var/lib/containers/storage/volumes
+
+Otázka #2:
+Jakým příkazem vypíšete bežící kontejnery včetně jejich příslušnosti k podům?
+podman info

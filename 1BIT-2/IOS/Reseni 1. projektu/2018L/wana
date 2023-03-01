@@ -1,0 +1,370 @@
+#!/bin/sh
+
+POSIXLY_CORRECT=yes
+
+### extract will take a parameter of log name and [extract &&] get its content
+#################################
+extract()
+{
+  for i in "$@"; do
+  case "$i" in
+
+    *.gz)  gunzip -c ./"$i" ;;
+
+    *log*)  cat ./"$i" ;;
+
+    *) echo "${i} is not recognized log" >&2
+       exit 1;;
+  esac
+  done
+}
+### aFilt gets date for logs after said date
+#################################
+after=false
+aFilt()
+{
+  aDate=$1
+
+  if date -d "${aDate}" >/dev/null 2>&1
+then
+  after=true
+else
+  echo "${aDate} is incorrect date" >&2
+  exit 1
+fi
+}
+### bFilt gets date for logs before said date
+#################################
+before=false
+bFilt()
+{
+  bDate=$1
+
+  if date -d "${bDate}" >/dev/null 2>&1
+then
+  before=true
+else
+  echo "${bDate} is incorrect date" >&2
+  exit 1
+fi
+}
+### checkIP checks and gets IPV4 or IPV6
+#################################
+ipbool=false
+checkIP()
+{
+  ip="$1"
+  if echo "$ip" | grep -Eq "^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$" || echo "$ip" | grep -Eq "^[[:xdigit:]]{0,4}\:[[:xdigit:]]{0,4}\:[[:xdigit:]]{0,4}\:[[:xdigit:]]{0,4}\:[[:xdigit:]]{0,4}\:[[:xdigit:]]{0,4}\:[[:xdigit:]]{0,4}$"
+  then
+    ipbool=true
+  else
+    echo "${ip} is incorrect ip adress" >&2
+    exit 1
+  fi
+}
+### uriFilt takes uri
+#################################
+uribool=false
+uriFilt()
+{
+ uri1="$1"
+ uribool=true
+}
+
+
+### Filters stores boolean values to whether apply certain filter
+#################################
+Filters()
+{
+ if [ $after = true ]
+  then
+    gtDate
+  else
+    cat
+ fi |
+
+ if [ $before = true ]
+  then
+    ltDate
+  else
+    cat
+ fi |
+
+ if [ $ipbool = true ]
+  then
+     ipFind
+   else
+     cat
+ fi |
+
+ if [ $uribool = true ]
+  then
+     uriFind
+   else
+     cat
+ fi
+}
+
+### gtDate searches for logs with dates after var $aDate and sends them through
+#################################
+gtDate()
+{
+#premenim zadany datum na integer a vypocitam celkovy cas v sekundach
+todate=$(date -d "$aDate" +"%Y-%m-%d %H:%M:%S")
+time1=`date --date="$todate" +%s`
+
+#premenim log datum cisla a pocet v sekundach
+  while  read -r first second third date fourth; do
+
+    echo "$date" | awk '{ print substr($1,2) }' |
+    while IFS='/|:' read -r day month year hour minute seconds; do
+        case $month in
+          Jan) month=01
+              ;;
+          Feb) month=02
+              ;;
+          Mar) month=03
+              ;;
+          Apr) month=04
+              ;;
+          May) month=05
+              ;;
+          Jun) month=06
+              ;;
+          Jul) month=07
+              ;;
+          Aug) month=08
+              ;;
+          Sep) month=09
+              ;;
+          Oct) month=10
+              ;;
+          Nov) month=11
+              ;;
+          Dec) month=12
+              ;;
+        esac
+        tempDate=$(echo "$year-$month-$day $hour:$minute:$seconds")
+
+        codate=$(date -d "$tempDate" +"%Y-%m-%d %H:%M:%S")
+        time2=`date --date="$codate" +%s`
+
+
+    #urobim porovnanie
+    if [ $time2 -gt $time1 ] ;
+       then
+       echo "$first $second $third $date $fourth"
+    fi
+ done
+done
+}
+
+###  ltDate searches for logs with dates before var $bDate and sends them through
+#################################
+ltDate()
+{
+#premenim zadany datum na integer a vypocitam celkovy cas v sekundach
+todate=$(date -d "$bDate" +"%Y-%m-%d %H:%M:%S")
+time1=`date --date="$todate" +%s`
+
+#premenim log datum cisla a pocet v sekundach
+  while  read -r first second third date fourth; do
+
+    echo "$date" | awk '{ print substr($1,2) }' |
+    while IFS='/|:' read -r day month year hour minute seconds; do
+        case $month in
+          Jan) month=01
+              ;;
+          Feb) month=02
+              ;;
+          Mar) month=03
+              ;;
+          Apr) month=04
+              ;;
+          May) month=05
+              ;;
+          Jun) month=06
+              ;;
+          Jul) month=07
+              ;;
+          Aug) month=08
+              ;;
+          Sep) month=09
+              ;;
+          Oct) month=10
+              ;;
+          Nov) month=11
+              ;;
+          Dec) month=12
+              ;;
+        esac
+        tempDate=$(echo "$year-$month-$day $hour:$minute:$seconds")
+
+        codate=$(date -d "$tempDate" +"%Y-%m-%d %H:%M:%S")
+        time2=`date --date="$codate" +%s`
+
+    #urobim porovnanie
+    if [ $time2 -lt $time1 ] ;
+       then
+       echo "$first $second $third $date $fourth"
+    fi
+ done
+done
+}
+
+### ipFind searches for logs with ip from var $ip and sends them through
+#################################
+ipFind()
+{
+  while  read -r ipy rest; do
+    echo "$ipy" | awk '{ print $1 }' |
+    if [ "$ip" = "$ipy" ] ; then
+      echo "$ipy $rest"
+    fi
+  done
+}
+
+### uriFind searches for logs with uri from var $uri and sends them through
+#################################
+uriFind()
+{
+  while read -r one two three four five six URI rest; do
+    echo "$URI" |
+    case $URI in
+      $uri1) echo "$one $two $three $four $five $six $URI $rest"
+    esac
+  done
+}
+
+### hLoad detects ip activity in 1 hour intervals
+#################################
+hLoad()
+{
+    while IFS='/|:' read -r day month year hour minutes second; do
+        case $month in
+          Jan) month=01
+              ;;
+          Feb) month=02
+              ;;
+          Mar) month=03
+              ;;
+          Apr) month=04
+              ;;
+          May) month=05
+              ;;
+          Jun) month=06
+              ;;
+          Jul) month=07
+              ;;
+          Aug) month=08
+              ;;
+          Sep) month=09
+              ;;
+          Oct) month=10
+              ;;
+          Nov) month=11
+              ;;
+          Dec) month=12
+              ;;
+        esac
+
+        echo "$year-$month-$day $hour:00"
+    done
+
+}
+
+#################################
+#################################
+
+while [ $# -gt 0 ]; do
+  case $1 in
+    -a)
+        shift
+        aFilt "$1"
+        ;;
+
+    -b)
+        shift
+        bFilt "$1"
+        ;;
+
+    -ip)
+        shift
+        checkIP "$1"
+        ;;
+
+    -uri)
+        shift
+        uriFilt "$1"
+        ;;
+
+#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#
+
+    list-ip)
+        shift
+        extract "$@" | Filters | awk '{ print $1 }' | sort -u
+        exit 0
+        ;;
+
+    list-hosts)
+        shift
+        extract "$@" | Filters | awk '{ print $1 }' | sort -u |
+        while read IPADR rest ; do
+          hostname=$(host $IPADR)
+          if [ $? -eq 0 ]; then
+           host $IPADR | awk '{ print $5 }'
+          else
+           echo "$IPADR"
+          fi
+        done
+        exit 0
+        ;;
+
+    list-uri)
+        shift
+        extract "$@" | Filters | awk '{ print $7 }' | sort -u |
+        while read row ; do
+          case $row in
+            /*)  echo $row ;;
+
+            *)  ;;
+          esac
+        done
+        exit 0
+        ;;
+
+
+    hist-ip)
+        shift
+        extract "$@" | Filters | awk '{ print $1 }' | sort -n | uniq -c | sort -r |
+        while read count ip ; do
+           printf "$ip ($count) : "
+           printf '%0.s#' $(seq 1 "$count")
+           printf "\n"
+        done
+        exit 0
+        ;;
+
+    hist-load)
+       shift
+       extract "$@" | Filters | awk '{ print substr($4,2) }' | hLoad | uniq -c |
+       while read countL tempDateL ; do
+          printf "$tempDateL ($countL):"
+          printf '%0.s#' $(seq 1 "$countL")
+          printf "\n"
+       done | sort -n
+       exit 0
+       ;;
+
+    *.gz)
+       extract "$@" | Filters
+       exit 0
+       ;;
+
+    *log*)
+       extract "$@" | Filters
+       exit 0
+       ;;
+  esac
+  shift
+done
