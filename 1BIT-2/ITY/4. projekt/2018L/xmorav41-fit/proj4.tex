@@ -1,0 +1,90 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, top=3cm, text={17cm,24cm}]{geometry}
+\usepackage[unicode]{hyperref}
+\usepackage{times}
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+\Huge
+\textsc{Vysoké učení technické v~Brně}
+\\
+\huge
+\textsc{Fakulta informačních technologií}
+
+\vspace{\stretch{0.382}}
+
+\LARGE {Typografie a~publikování -- 4. projekt}
+\\
+\Huge {Bibliografické citace}
+
+\vspace{\stretch{0.618}}
+
+\end{center}
+\noindent
+{\Large \today \hfill Tomáš Moravčík (xmorav41)}
+\end{titlepage}
+
+
+\section{\LaTeX}
+
+\subsection{Úvod}
+\LaTeX \ je typografický systém, ktorý má dve zdanlivé nevýhody, ktoré odrádzajú nových používateľov. Prvou je, že užívateľ potrebuje mať isté znalosti o~ňom a druhou je tvorba textu podobná písaniu programu v programovacom jazyku. \cite{sbornik}
+
+\subsection{História}
+Okolo roku 1983 profesor Donald E. Knuth vytvoril typografický systém \TeX, ktorý používal pre svoje potreby na sadzbu textov a matematických rovníc, pričom zachoval vysokú úroveň dokumentu. Následne sa~vytvorili mnohé nadstavby, ktoré uľahčili prácu pre bežných užívateľov. Najznámejšou nadstavbou sa~stal \LaTeX, vytvorený 1994 Leslie Lamportom. \cite{thes1}
+
+\subsection{Prečo \LaTeX}
+\LaTeX je populárnou voľbou technických publikácii, ako napríklad články, správy, knihy a dizertácie, ktoré sú plné formúl a rovníc. V minulosti kým text bol písaný strojom, formule sa~písali ručne alebo najatím špecialistu. Každý časopis má vlastné formátovanie a vlastný dizajn, ktorý sa~dá prostredníctvom latexu ľahko vytvoriť \cite{jour1}
+
+\subsection{Viacjazyčnosť}
+ Vďaka veľkej popularite sa \LaTeX značne rozšíril vo svete a to malo za príčinu jeho rozšírenia pre jazyky nevyužívajúce latinku, ako napríklad ruština alebo čínština. Väčšinu jazykov zabezpečuje systém \texttt{babel}, pričom pre jazyky ako japončina alebo kórejčina vznikli vlastné implementácie. \cite{Companion}
+
+\subsection{Prostredia}
+Najčastejšími prostrediami s~ktorými sa študent naučí pracovať sú tie najpoužívanejšie \cite{jour2}:
+\begin{itemize}
+    \item Theorémové prostredia  
+    \item Rovnicové prostredia
+    \item Tabulárové prostredia
+    \item Textové prostredia
+    
+\end{itemize}
+
+\subsection{Grafika}
+V dnešnej dobe využitie obrázkov a grafických náčrtkov je veľmi bežné za účelom rýchleho sprostredkovania informácii. \LaTeX umožňuje vytvoriť virtuálne akýkoľvek grafický súbor, napríklad kresby pre matematické účely. \cite{Syrop}
+
+\subsection{Preambula dokumentu}
+Preambula sa nachádza medzi príkazmi \verb|\documentclass| a \verb|\begin{dokument}|. Jedná sa o časť dokumentu, s~ktorou sa nastavia rôzne vlastnosti daného výstupného dokumentu, prostredníctvom rôznych balíčkov alebo vlastných príkazov. Najzaujímavejšie informácie sú \cite{thes2}:
+\begin{itemize}
+    \item Znaková sada vstupného dokumentu
+    \item Grafický štýl
+    \item Titulok, meno autora a dátum vytvorenia
+\end{itemize}
+
+\subsection{\textsc{Bib}\TeX}
+\textsc{Bib}\TeX \ umožňuje v prípade využitia množstva literatúry, na ktorú sa chcete odkazovať, vytvoriť zoznam použitej literatúry, spravidla zobrazený na konci dokumentu. \cite{online1} 
+\par
+\textsc{Bib}\TeX \ využíva súbor so~zoznamom referencií o literatúrach, napríklad meno autora, rok vydania, vydavateľstvo a mnoho iných. Súbor má koncovku .bib a neformátuje dané informácie, ale ich iba skladuje. Až \textsc{Bib}\TeX \ formátuje informácie pre výsledný dokument. \cite{online3} 
+
+
+\subsection{Ako osadzovať česky}
+Typografické pravidlá sú odlišné pre češtinu oproti angličtine, preto sa vytvorili modifikácie programov \TeX, \LaTeX \ a \texttt{pdflatex}, ktoré zabezpečujú české osádzanie. Pre češtinu sa \TeX \ volá \texttt{csplain}, český \LaTeX je \texttt{cslatex} a český \texttt{pdflatex} je \texttt{pdfcslatex}, pričom ich ovládanie je rovnaké ako pre anglické verzie. \cite{online2} 
+
+
+\newpage
+\bibliographystyle{czechiso}
+\bibliography{proj4}
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,127 @@
+\documentclass[11pt, hyperref={unicode}]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+
+\title{Typografie a publikování - 5. projekt}
+\subtitle{Prezentace}
+\author{Tomáš Moravčík (xmorav41)}
+\institute{Vysoké učení technické v~Brně \\ Fakulta informačních technologií}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Obsah}
+
+\begin{itemize}
+    \item Bucket sort
+    \pause
+    \begin{enumerate}
+        \item Definícia 
+        \item Obrázok 
+        \item Pseudokód 
+    \end{enumerate}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\end{frame}
+\begin{frame}{Bucket sort}
+\begin{block}{Princíp}
+\label{def1}
+Bucket sort (\textit{bin sort}) je stabilní triediaci algoritmus založení na rozdelení vstupného poľa do niekoľkých častí – takzvaných \textit{bucketov} (\emph{priehradiek}) – a zoradenie týchto častí pomocou iného stabilného riadiaceho algoritmu.
+\end{block}
+Bucket sort sa používa pri rovnomerne rozloženom veľkom množstve dát. 
+
+\pause
+
+\begin{itemize}
+    \item Ak nie sú dáta rovnomerne rozložené a sú si príliš blízke, elementy môžu byť priradené do jednej priehradky znamenajúc, že počet bude vyšší než priemer. 
+    \item V~najhoršom prípade sú všetky elementy uložené do jednej priehradky, v~ktorej bude dominovať (najčastejšie) neoptimálny \textit{Insertion sort} \textit{(triedenie vkladaním)}.
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}{Bucket sort}
+\begin{figure}[h]
+\begin{center}
+    \scalebox{0.4}{\includegraphics{BucketSort.png}}
+    \caption{Bucket sort}
+    \label{pic1}
+\end{center}
+\end{figure}
+\flushbottom
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{frame}[fragile]{Bucket sort}
+\lstset{style=mystyle}
+
+\begin{lstlisting}[language=C++]
+void bucketSort(float arr[], int n) 
+{ 
+    // 1) Create n empty buckets 
+    vector<float> b[n]; 
+     
+    // 2) Put array elements in different buckets 
+    for (int i=0; i<n; i++) {
+       int bi = n*arr[i]; // Index in bucket 
+       b[bi].push_back(arr[i]); 
+    } 
+  
+    // 3) Sort individual buckets 
+    for (int i=0; i<n; i++) 
+       sort(b[i].begin(), b[i].end()); 
+  
+    // 4) Concatenate all buckets into arr[] 
+    int index = 0; 
+    for (int i = 0; i < n; i++) 
+        for (int j = 0; j < b[i].size(); j++) 
+          arr[index++] = b[i][j]; 
+} 
+\end{lstlisting}
+\label{kod1}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+\begin{frame}{Zdroje}
+
+\begin{itemize}
+
+    \item https://www.algoritmy.net/article/152/Bucket-sort
+    \item https://www.geeksforgeeks.org/bucket-sort-2/
+    
+\end{itemize}
+    
+\end{frame}
+
+\end{document}

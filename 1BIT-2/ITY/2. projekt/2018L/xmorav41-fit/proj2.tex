@@ -1,0 +1,199 @@
+\documentclass[a4paper, 11pt, twocolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+
+\usepackage[left=1.5cm, top=2.5cm, text={18cm,25cm}]{geometry} 
+
+\usepackage{amsmath}
+\usepackage{times}
+\usepackage{stackrel}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage[IL2]{fontenc}
+
+
+\theoremstyle{definition}
+\newtheorem{definicia}{Definice}
+\newtheorem{veta}{Věta}
+
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+\Huge
+\textsc{Fakulta informačních technologií \\ Vysoké učení technické v~Brně}
+\vspace{\stretch{0.382}}
+
+\begin{LARGE}
+
+Typografie a~publikování -- 2. projekt
+\\
+Sazba dokumentů a~matematických výrazů
+
+\end{LARGE}
+\vspace{\stretch{0.618}}
+
+\end{center}
+
+{\Large 2019 \hfill Tomáš Moravčík (xmorav41)}
+
+\end{titlepage}
+
+\newpage
+
+\section*{Úvod}
+V~této úloze si vyzkoušíme sazbu titulní strany, matematic\-kých~vzorců, prostředí a~dalších textových struktur obvyk\-lých~pro technicky zaměřené texty (například rovnice (\ref{equation1})
+nebo Definice \ref{Definice1} na straně \pageref{Definice1}). Pro odkazovaní na vzorce
+a~struktury zásadně používáme příkaz \verb|\label| a~\verb|\ref|
+případně \verb|\pageref| pokud se chceme odkázat na stranu
+výskytu. \par
+Na titulní straně je využito sázení nadpisu podle optického středu s~využitím zlatého řezu. Tento postup byl
+probírán na přednášce. Dále je použito odřádkování se \mbox{zadanou relativní} velikostí 0.4\,em a 0.3\,em.
+
+\section{Matematický text}
+Nejprve se podíváme na sázení matematických symbolů
+a~výrazů v plynulém textu včetně sazby definic a~vět~s~vy\-užitím balíku \verb|amsthm|. Rovněž použijeme poznámku pod
+čarou s použitím příkazu \verb|\footnote|. Někdy je vhodné
+použít konstrukci \verb|\mbox{}|, která říká, že text nemá být
+zalomen.
+
+
+\begin{definicia}
+\label{Definice1}
+Zásobníkový automat \textsl{(ZA)} \textit{je definován jako
+sedmice tvaru $A = (Q, \Sigma, \Gamma, \delta, q_0, Z_0, F)$, kde:} 
+
+\begin{itemize}
+    \item $Q$\textit{ je konečná množina} vnitřních (řídicích) stavů,
+
+    \item \textit{$\Sigma$ je konečná} vstupní abeceda,
+
+    \item \textit{$\Gamma$ je konečná} zásobníková abeceda,
+
+    \item \textit{$\delta$ je} přechodová funkce $Q \times (\Sigma \cup \{ \epsilon\}) \times \Gamma \rightarrow 2^{Q\times\Gamma^*}$, 
+
+    \item $q_0 \in Q$ \textit{je} počáteční stav, $Z_0 \in \Gamma$ \textit{je} startovací symbol zásobníku $a F \subseteq Q$ \textit{je množina} koncových stavů.
+\end{itemize}
+\end{definicia}
+
+Nechť $P = (Q, \Sigma, \Gamma, \delta, q_0, Z_0, F)$ je zásobníkový automat. \textit{Konfigurací} nazveme trojici $(q, w, \alpha) \in Q\times\Sigma^*\times\Gamma^*$, 
+kde $q$ je aktuální stav vnitřního řízení, $w$ je dosud nezpra\-covaná část vstupního řetězce a $\alpha = Z_{i_1} Z_{i_2} \dots Z_{i_k}$ je
+\mbox{obsah zásobníku}\footnote{$Z_{i_1}$ je vrchol zásobníku}. 
+
+
+\subsection{Podsekce obsahující větu a odkaz}
+
+\begin{definicia}
+\label{Definice2}
+Řetězec $w$ nad abecedou $\Sigma$ je přijat ZA $A$\textit{ jest\-liže $(q_0, w, Z_0)\stackrel[A]{*}{\vdash}(q_F,\epsilon,\gamma)$ pro nějaké $\gamma \in \Gamma^*$ a $q_F \in F$. 
+Množinu $L(A) = \{w \mid w$ je přijat ZA $A$\} $\subseteq \Sigma^*$ nazýváme} 
+jazyk přijímaný TS $M$.
+\end{definicia}
+
+Nyní si vyzkoušíme sazbu vět a důkazů opět s použitím
+balíku \verb|amsthm|.
+
+\flushbottom
+
+
+
+\begin{veta}
+\textit{Třída jazyků, které jsou přijímány ZA, odpovídá}
+bezkontextovým jazykům.
+\end{veta}
+
+\begin{proof}
+V důkaze vyjdeme z Definice \ref{Definice1} a \ref{Definice2}.
+\end{proof}
+
+\section{Rovnice a odkazy}
+Složitější matematické formulace sázíme mimo plynulý
+text. Lze umístit několik výrazů na jeden řádek, ale pak je
+třeba tyto vhodně oddělit, například příkazem \verb|\quad|.
+
+\vspace{5mm}
+\noindent
+$ \sqrt[i]{x^3_i} $
+\quad
+kde $x_i$ je $i$-té sudé číslo splňující 
+\quad
+$x_i^{2-x_i^{i^2}} \leq x_i^{y_i^3} $
+
+\medskip
+V rovnici (\ref{equation1}) jsou využity tři typy závorek s  různou explicitně definovanou velikostí.
+
+\begin{eqnarray}
+\label{equation1}
+    x  & = &  \bigg[\Big\{\big[a + b\big] * c\Big\}^d \ominus1\bigg]^{1/2}\\
+    y  & = &  \displaystyle \lim_{a\to \infty} \frac{\frac{1}{log_{10}x}}{sin^2x + cos^2x} \nonumber 
+\end{eqnarray}
+
+V této větě vidíme, jak vypadá implicitní vysázení limity
+$\lim_{n \to \infty} f(n)$ v normálním odstavci textu. Podobně
+je to i s dalšími symboly jako $\prod^n_{i=1} 2^i$ či $\bigcap_{A\in\mathcal{B}}A$. V pří\-padě~vzorců
+$ \displaystyle \lim_{n\to\infty} f(n)$ a $\stackrel[i=1]{n}{\prod}2^i$ jsme  si vynutili méně úspornou sazbu příkazem \verb|\limits|.
+
+\begin{eqnarray}
+\label{equation2}
+\int_b^a g(x)\, \mathrm{d} x & = & - \int\limits_a^b f(x) \, \mathrm{d}x\\
+\overline{\overline{A \wedge B}} & \Leftrightarrow & \overline{\overline{A} \vee \overline{B}}
+\label{equaiton3}
+\end{eqnarray}
+
+\section{Matice}
+Pro sázení matic se velmi často používá prostředí \verb|array|
+a závorky (\verb|\left|, \verb|\right|).
+
+\begin{equation*}
+\left[
+\begin{array}{ccc}
+       & \widehat{\beta + \gamma}  & \hat{\pi} \\
+\vec a & \overleftrightarrow{AC}   &           \\
+\end{array} 
+\right]
+= 1 \Longleftrightarrow \mathbb{Q} = \mathbf{R}
+\end{equation*}
+
+\begin{equation*}
+\mathbf{A} =
+\left|
+\begin{array}{cccc}
+a_{11} & a_{12} & \ldots & a_{1n} \\
+a_{21} & a_{22} & \ldots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \ldots & a_{mn}
+\end{array}
+\right|
+\,=\ 
+\begin{matrix}
+t & u \\
+v & w
+\end{matrix}
+\ =
+tw - uv
+\end{equation*}
+
+Prostředí \verb|array| lze úspěšně využít i jinde.
+
+\begin{equation*}
+\binom{n}{k} = 
+\left\{
+\begin{array}{ll}
+0 & \text{ pro } k < 0 \text{ nebo } k > n\\
+\frac{n!}{k!(n-k)!} & \text{ pro } 0 \leq k \leq n
+\end{array} 
+\right.
+\end{equation*}
+
+
+
+\end{document}
