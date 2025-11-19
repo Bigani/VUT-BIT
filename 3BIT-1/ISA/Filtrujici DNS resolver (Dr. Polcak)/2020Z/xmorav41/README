@@ -1,0 +1,30 @@
+# Filtrující DNS resolver
+## ISA - Síťové aplikace a správa sítí 2020
+##### Tomáš Moravčík xmorav41
+
+DNS program, ktorý bude filtrovať požiadavky typu A smerujúce na domény v rámci dodaného zoznamu a ich poddomén. Ostatné požiadavky bude preposielať v nezmenenej podobe špecifikovanému resolveru. 
+
+### Preklad
+```sh
+$ make
+```
+### Príklad použitia
+```sh
+$ ./dns -s ::fffff:8.8.8.8 -p 5454 -f filter.txt -v
+```
+
+
+### Súbory
+
+  - dns.cpp
+  - Makefile
+  - manual.pdf
+  - README
+  
+
+### Známe problémy
+  - Na eve sú problémy pripojiť sa k serveru
+  - Program má pri spustení v stdout bufferi náhodné číslo ktoré vytlačí (?)
+  
+
+
