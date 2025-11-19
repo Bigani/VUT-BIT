@@ -1,0 +1,3668 @@
+﻿<!DOCTYPE html><html lang="en"><!-- #BeginTemplate "../../rapidtables.dwt" --><head>
+    <base href="https://www.rapidtables.com/calc/math/Arctan_Calculator.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style data-savepage-href="/lib/rapidz.css" type="text/css">* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body {
+	margin:0px;
+	padding:0px;
+	color:#222;
+	/*background:#fffffa !important;*/
+	font-size:16px;
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+	border-style:none;
+	min-height: 100%;
+}
+
+#header {
+	background:#f0f0d0;
+	padding:10px 20px 7px 20px;
+	/*position:fixed;
+	top:0;
+	left:0;*/
+	height:55px;
+	width:100%;
+	z-index:100;
+	/*-webkit-backface-visibility: hidden;*/
+	/*-webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.15);
+	box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.15);*/
+}
+#header p, #header a {
+	line-height:1;
+	font-size:x-large;
+	font-weight:bold;
+	text-decoration:none;
+	color:#666644;
+}
+#header a:hover {
+	color:#dd6600;
+}
+#header>div {
+	width:980px;
+	margin:0 auto;
+	padding:0px 20px;
+}
+#header>div>div>p {
+	margin:0;
+}
+#header>div>div>p>a:nth-child(2) {
+	margin-right:0;
+}
+.box {
+	display:inline-block;
+	vertical-align:middle;
+	margin:0;
+}
+.gcse-searchbox {
+	max-width:380px;
+	width:380px;
+	margin-left:50px;
+}
+.gsc-input-box {
+	height:inherit !important;
+	padding:4px 0px;
+}
+input#gsc-i-id1.gsc-input {
+    font-size:18px;
+}
+td.gsib_b {
+	vertical-align:bottom !important;
+}
+input.gsc-search-button {
+	background:#888866 !important;
+	border-color:#666 !important;
+	width:69px !important;
+	height:29px !important;
+}
+input.gsc-search-button:hover {
+	background:#777755 !important;
+}
+
+@media only screen and (max-width:799px) {
+	#header { height:auto; padding:8px 20px; }
+	#header a {
+		font-size:large;
+	}
+	#header>div {
+		max-width:100%;
+		width:auto;
+		padding:0;
+	}
+	.gcse-searchbox {
+		display:none;
+		width:100%;
+		margin:10px 0 0 0;
+	}
+}
+
+#wrapper {
+	max-width:1000px;
+	margin:0 auto;
+	/*margin-top:33px;*/
+	border-width:0;
+	/*padding:20px;*/
+	padding:0 20px 20px 20px;
+}
+
+#nav {
+	color:#000;
+	clear:left;
+	line-height:2;
+	font-size:small;
+	margin:8px 0 0 0;
+	padding:6px 0;
+	border-bottom:1px #ddd solid;
+}
+#nav a {
+	line-height:2;
+	padding:11px 4px;
+	color:#000;
+	text-decoration:none; 
+}
+#nav a:first-child { padding-left:7px; padding-right:7px; }
+#nav a:hover {
+	background:#f0f0d0;
+}
+
+#lcol {
+	display:inline-block;
+	vertical-align:top;
+	width:650px;
+	padding-right:10px;
+}
+#doc {
+	padding:0px;
+	margin-left:0px;
+}
+#rcol {
+	padding:20px 0px 10px 0px;
+	display:inline-block;
+	vertical-align:top;
+	width:300px;
+}
+
+#addthis1 {
+	margin-top:0px;
+	margin-bottom:20px;
+}
+#addthis2 {
+	margin-top:20px;
+}
+
+#fdbk {
+	max-width:600px;
+	margin-bottom:20px;
+}
+#fdbk table {
+	max-width:500px;
+	border-style:none;
+}
+#fdbk input[type=text] {
+	margin-left:2px;
+	padding:5px;
+	width:250px;
+}
+#fdbk input[type=button] {
+	padding:5px;
+	font-size:15px;
+}
+#fdbk textarea {
+	max-width:415px; 
+	width:100%;
+}
+
+#top-ad {
+	width:728px;
+	margin:20px auto 10px auto;
+}
+#rec-ad {
+}
+#ban-ad {
+	margin:25px 0;
+}
+.adslot_1 { display:inline-block; width:728px; height:90px; }
+.adslot_2 { display:inline-block; width:300px; /*height:250px;*/ height:600px; margin:30px 0px; }
+.adslot_3 { display:inline-block; width:100%; max-width:650px; height:90px; }
+
+@media only screen and (max-width: 799px) {
+	#nav { margin-top:0; }
+	#lcol { width:100%; padding-right:0; }
+	#rcol { margin-left:0px; width:100%; padding:20px 0; }
+	#top-ad { max-height:100px; }
+	#ban-ad { margin:30px auto; width:300px; }
+	.adslot_2 { display:none; }
+	.adslot_3 { width:300px; height:250px; margin:auto }
+}
+@media only screen and (max-width: 799px) and (orientation: portrait) {
+	#top-ad { margin:15px auto 10px auto; max-width:100%; }
+	.adslot_1 { max-width:100%; height:100px; }
+}
+@media only screen and (max-width: 799px) and (orientation: landscape) {
+	#top-ad { margin:15px auto 0 auto; max-width:320px; }
+	.adslot_1 { max-width:320px; height:50px; }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+	.adslot_3 { margin-left:-10px }
+}
+
+#footer {
+	padding:30px;
+	clear:both;
+	text-align:center;
+	line-height:200%;
+	border-top:1px solid #eee;
+	background:#f8f8f8;
+}
+
+#footer a {
+	padding:8px 5px 8px 5px;
+	text-decoration:none; 
+	color:#333;
+}
+
+#footer a:link, a:visited {
+}
+
+#footer a:hover {
+	color:#000;
+	background:#e8e8c8;
+}
+
+#wrapper p, body h1, body h2, body h3, body h4, body h5
+{
+	line-height: 1.8;
+}
+#wrapper a
+{
+	line-height: 2;
+}
+#wrapper P
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#wrapper TABLE
+{
+	margin-bottom: 5px;
+}
+#wrapper TH
+{
+	background: #E0E0E0;
+	font-style: normal;
+}
+#wrapper TD
+{
+	padding-right:5px;
+	padding-left:5px;
+}
+#wrapper UL, UL UL
+{
+	font-size: 1em;
+	list-style-position:outside;
+}
+#wrapper LI
+{
+	margin-top:2px;
+}
+#rcol li {
+	margin-left: -11px;
+}
+#wrapper H1,H2,H3
+{
+	font-weight:normal;
+}
+H1
+{
+	margin-bottom:4px;
+	padding-bottom:0px;
+	color: #333333;
+}
+H1 { font-size: 1.8em; margin-top:0; }
+H2 { font-size: 1.4em; letter-spacing: 0px; margin-top: 10px; margin-bottom: 3px;}
+H3 { font-size: 1.4em; letter-spacing: 0px; margin-top: 10px; margin-bottom: 3px;}
+H4 { font-size: 1.1em; margin-top: 5px; margin-bottom: 2px; font-weight: bold;}
+H5 { font-size: 0.9em; margin-top: 5px; margin-bottom: 2px; font-weight: bold;}
+H6 { font-size: 1.1em; color: #333333; font-weight: normal; font-style: italic; margin-top: 3px; margin-bottom: 0px; }
+#rcol H5 { font-size: 0.9em; font-weight: bold; margin-top: 5px; margin-bottom: 2px; background:#e0e0e0; padding:5px 5px 5px 10px}
+
+input		{ font-size: 1em; }
+@media only screen and (max-width:799px) {
+	.btn { font-size: 1.2em; padding:7px; }
+}
+@media only screen and (min-width:800px) {
+	.btn { font-size: 1.2em; padding:4px; }
+}
+.intext		{ background: #ffffff; padding-left:3px; border:1px inset #eee}  
+.outtext	{ background: #e0f0e0; padding-left:3px; border:1px solid #ccc}
+
+a:link		{ text-decoration: none; color: #083d8d; }
+a:visited	{ text-decoration: none; color: #083d8d; }
+a:active	{ text-decoration: underline; color: #000000; }
+a:hover		{ text-decoration: underline; color: #000000; }
+a:focus	    { outline: none; }
+
+.math       { font-family: "Times New Roman"; font-size: 1.6em; padding-left: 6px; font-weight: normal;}
+.mathsymbol { font-family: "Times New Roman"; font-size: 1.2em;  font-weight: normal; }
+.text       { font-family: "Times New Roman", Times, serif; font-size: 1.2em }
+.code       { font-family: "Courier New"; font-size: 1.0em; padding-left: 6px;}
+.codebg     { font-family: "Courier New"; font-size: 1.0em; color: #000000; background:#f0f0f0; margin-top: 0px; margin-bottom: 0px; padding: 10px; }
+.codebg.p   { font-family: "Courier New"; font-size: 1.0em; color: #000000; background:#f0f0f0; margin-top: 0px; margin-bottom: 0px;}
+p.code      { font-family: "Courier New"; font-size: 1.0em; color: #000000; background:#f0f0f0; margin:0px; padding:5px; border-width:1px; border-color:#ccc; border-style:solid; line-height:20px}
+p.wcode     { font-family: "Courier New"; font-size: 1.0em; color: #000000}
+p.tcode		{ font-family: "Courier New"; font-size: 1.0em; color: #000000; background:#f0f0f0; margin:0px; padding:5px; border-width:1px; border-color:#ccc; border-style:solid; line-height:20px }
+
+.table1 .hov { border: 2px black solid; padding: 4px; }
+.table1 .ho2 { border: 2px #707070 solid; padding: 4px; }
+.table1 .td  { border: 1px black solid; padding: 5px; }
+
+table.dtable, table.ntable { border: 1px #ccc solid; border-collapse:collapse; padding: 5px;}
+table.dtable th, table.dtable td, table.ntable th, table.ntable td  { border: 1px #ccc solid; border-collapse:collapse; padding: 5px; font-weight:normal;}
+table.dtable th, table.ntable th { text-align:center }
+table.ntable td { text-align:right }
+
+table.calc, .calc2 {
+	border-spacing: 0px;
+	border-collapse: separate;
+	background: #e8e8e8;
+	border:1px #ddd solid;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+}
+table.calc td, .calc2 td {
+	padding: 2px;
+	border-width: 0px;
+	border-style: none;
+	background: #e8e8e8;
+}
+
+.calc2 select { padding:4px 2px; font-size:1.2em; font-family:Arial, Helvetica, sans-serif }
+@media only screen and (max-width: 576px) {
+	.calc2 { padding:8px; margin-left:auto; margin-right:auto; }
+	.calc2 td { float:left; }
+	.calc2 td:nth-child(2) { clear:left; }
+	.calc2 tr td:nth-child(3) { padding-top:10px; }
+	.calc2 input[type=text], .calc2 input[type=number], .calc2 input[type=url] { width:190px; font-size:x-large; padding-left:3px; }
+	.calc2 tr td:nth-child(3) select { margin-top:-8px; }
+}
+@media only screen and (min-width: 577px) {
+	.calc2 { padding:15px; }
+	.calc2 tr { line-height:40px; }
+	.calc2 input[type=text], .calc2 input[type=number], .calc2 input[type=url] { width:220px; font-size:x-large; padding-left:3px; }
+}
+</style>
+<link rel="apple-touch-icon" sizes="180x180" href="/lib/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" data-savepage-href="/lib/favicon/favicon-32x32.png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB8lBMVEX/mTP/mzT/mjPykTDSfirTfirVgCvfhi3vkDD9mDPYgit1Rhc6IwwVDAQVDQQYDgUSCwQeEgYzHwpiOxS7cCX6lzK+ciYQCQMAAAAZDwWcXh+eXyBFKg4DAgEOCAOCThr5ljLVgSsWDQRPMBD5mDP/nDTpjS9BJw0MBwKxaiOyayQGBAGNVRxbNxL8lzJ3RxgPCQPHdyikYyEBAQA7Iwz0kjE8JAw1IAvujzCTWB1GKg73lDHNfCkTCwRtQhb9mTNhOhOATRqWWh4EAwGrZyLPfSodEQYoGAhYNRIfEwbdhSzojC9RMBAbEAXjiC0lFgdLLQ/sjS/mii4CAQAOCQNMLQ/AdCf+mjO0bCQHBAEiFQc5IgsmFwgJBQIKBgJwQxbDdSf1kzF0RhcQCgOnZCFTMhG7cib/nTTwkDA4Igv0lDGfYCB9TBnLeikRCwRxRBfUfyoXDgVCKA30kzGSWB0GAwGvaSP1lDHSfyr7lzJUMxEjFQfghy2DTxqdXh9WNBELBwJeOROUWR7pjC8tGwnkii7+mTNoPxXJeShkPBSuaSPYgywiFAckFgfkiy6iYSBdOBP6mDPIeChPLxANCAPghi3XgSsaEAWOVRzbgyxoPhVQMBBSMRBZNRLMeyn3lTJ7Shl4SBjehSz+mDP6ljL////V8/zAAAAAAWJLR0SlLrlKLwAAAAd0SU1FB+ECCQsSLSd6vSoAAAGLSURBVDjLxVHVUgNBENxdNEhwOFwPJ7h7cJfg7u4e3N3d/UPpoygKbvMM83DT1d03toT8adDvYEyXrqdvYPgVRsYKyunMxNTMXKlUmlsoLa2sbWztdFSxdxAEwdHJ2cVVENzcPfgZPL1g8PYRff2Q/QO4LjQwCEIwJWIwshCi4qYIBR0WDkNEJFBUNLdGDOjYOEbEeKlCQqK8Q1Iy6BQMn5omGdLla1A12IxMSmhWNlCOidygygWdl0/FgkKAokC5zopLwJeWlQf4aYSKyqpqbsmaWhjq6hsahabmllYdp26D3t7RiW9TVzd/ZtZTD6m3r186wQD/P6GDQ1CGxZFRpLFxHYYJCJNT4rQLstcMX0I7C2FuntEF5MhFzsDm6yAsaQm1XwZYUXAdpibBr1LC1talM27Iz7S5Jb3kNipv7gAF7cp6iHv7oA8OQdMjDeDxya8Siadn0vudqy9aCbu8Aqy4vvD4MeHN7d09ovCh7ZGRp2dvwKWX1x813rSqz9C+S9MrPvE7t8i/xQfvQVHoo6YvnQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMi0wOVQxMToxODo0NSswMTowMEphiF8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDItMDlUMTE6MTg6NDUrMDE6MDA7PDDjAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC" sizes="32x32">
+<link rel="icon" type="image/png" data-savepage-href="/lib/favicon/favicon-16x16.png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABBVBMVEX/mTP/mjP/mzTOfCmIURt2Rxh4SBiATRp7ShmcXh/hhy33lDFoPhUAAAAlFgezayRcNxI5IgvehSz7lzJUMxFfORP/nDS/dCcJBgKeXyDghy0jFQedXyD/njWxayQFAwEEAgGpZSKxaiMXDgXVgivykTBVMxFMLQ/rjS9zRRcmFwiFUBtGKg4oGAjkiS7wkDA4IgtuQhb7mDPJeSgQCgMJBQKLVBziiC2RVx0sGwnsji/FdicNCAMGBAG0bCT5lzJQMBBiOxQyHgpyRReuaCMTCwRmPRTtji9qQBUnFwjIeCj8lzLzkjGyaySfXyCgYCCoZSLVgCvWgSufYCC5byX1kzH///99cehyAAAAAWJLR0RWCg3piQAAAAd0SU1FB+ECCQsSLSd6vSoAAACmSURBVBjTY2DADhiZmEAIzmdmYWVj5+Dkgotw8/Dy8QvwCgrBRIRFeEXFxCV4JcWgJkhJ88rIyskrKDJBBJiU5JVVVNV41TWgWhg1ebW0dXS19WB8fQNeQx1eNSOYkUzGJqbiZrx85nABC15LK2sbWzuokYz2DryOjFZOvM5QAWEXV143dwYPXk8vb7CAj6+ff0AgY1Cwf0go1AwxMaC/GIEkNn8DAMKnEPGugS+UAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAyLTA5VDExOjE4OjQ1KzAxOjAwSmGIXwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMi0wOVQxMToxODo0NSswMTowMDs8MOMAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII=" sizes="16x16">
+<link rel="manifest" href="/lib/favicon/manifest.json">
+<link rel="mask-icon" href="/lib/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" data-savepage-href="/lib/favicon/favicon.ico" href="data:image/x-icon;base64,AAABAAMAMDAAAAEACACoDgAANgAAACAgAAABAAgAqAgAAN4OAAAQEAAAAQAIAGgFAACGFwAAKAAAADAAAABgAAAAAQAIAAAAAAAACQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAxk/YAIWKkAAkbLAAZTH4AKn3QAAkcLwAzmPwAEjdbADOZ/wACBwwAEzheABtShwA0nP8ANZ//AAwjOwAUPWQAJW62AAQNFQAlb7kAHlmTAC6K5QAeWpYADipHACd1wgAXRHAABxQhAAcVJAAwkfEAIGCfADGS9AAAAAEAGUt8ADKW9wAqfdEAM5j9AAIGCgArgtcAG1KIACyD2gAkbbQAFD1lACVutwAEDRYAFT5oAC6K5gAOKUUAJ3XDAAcUIgAwkfIAGUp6ABlLfQAyl/sAAgUIADOY/gArgtgANJv+ABtRhgAbUokACyE3ACyD2wAEDBQADSdAAC6J5AANKEMABhIdACd0wQAGEyAAH16bADCQ8AAIGSkAMZTzABlKewAJGiwAAQQGACJmqgASNVgAMpf8AAIFCQALIDUANJv/ABQ8ZAAECxIABAwVAC2I4gANJ0EAHViTACZzvwAPLUoADy5NADCQ8QAYSXkACBgnACl6ywAZSnwAETRWADKW+gABBAcAEjVZABpPggArgdcAG1CFACRrsQAUO2IALYjjACZyvQAGERwABhIfAC+N6QAvjuwADy1LADCP7wAYSHcACBgoACl6zAAylfgAAQMFADKW+wArgNUAM5r+AAofNAArgdgAEzpgACRrsgAUO2MABRAaABZBbAAmcr4ABhEdAB9cmAAvjeoAL47tAB9dmwAPLEkACBgpAAECAwAhZKcAAQMGABpOgQAKHS8AM5r/ACNqsAADCQ8AEzphABxUigAtht8ADCU+AB1WkAAvjOgADitHAC+N6wAfXJkAF0ZzADGT9AAAAQEAMZT3ABEyUwAqftEAGk6CAAoeMwAzmf0AEzhcAAMIDQAjarEALITaACyF3QAMIzkADCQ8AC2G4AAFDxkAL4zpAB9cmgAXRnQABxYlACFiowAxk/UAAAECACFjpgAqfc8AKn7SABI3WgAzmf4AAgcLABM4XQADCA4AHFOJACyF3gAcVIwADCM6ACVvuAAFDhcAJXC7AC6L5wAndsQABxUjABdGdQAod8cAIGGhADGS8wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCYxQUFBQUFBQUFBQUFBQjAkJCQkJCYxQUFBQUFBQUFCMCQkJCQkJCQkJCQkJCQkJCVpkeXl5eXl5eXl5eWR2J2AJCQkJczxkeXl5eXl5ZHZFCQkJCQkJCQkJCQkJCQkJUL8DKxK+vr6+vr6+EoB4YpGMCQlQQmsrvr6+vis9rS5CUAkJCQkJCQkJCQkJCQkJCQEiM1IAAAAAAAAAQ7G6b3UJCQlQBAAAAAAAALCcL4JgCQkJCQkJCQkJCQkJCQkJCQlQdzqHAAAAAAAAOQ2MjAkJCQmZVQAAAAAAAKeqDYwJCQkJCQkJCQkJCQkJCQkJCQkJjGx4AAAAAAAAkFAJCQkJCVCzEgAAAAAAsIENCQkJCQkJCQkJCQkJCQkJCQkJCQkJCVCKAAAAAAAACzYJCQkJCVBEmgAAAAAAGqWMCQkJCQkJCQkJCQkJCQkJCQkJCQkJCVDBjgAAAAAAi5aMCQkJCSO3AAAAAAAACE0JCQkJCQkJCQkJCQkJCQkJCQkJCQkJCYwcvAAAAAAAohhQCQkJjC1GAAAAAACHrlAJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQmMrAAAAAAAAAxQCQkJUBNOAAAAAAB9ZFAJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQlQZkoAAAAAAG5zCQkJUCAAAAAAAACVmwkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQmMVMIAAAAAAKl2UAkJmVUAAAAAAABlUAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJNF8AAAAAALDFUAlQsysAAAAAAApXUAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJUBQAAAAAAAB8tQlQFgAAAAAAAAaCjAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJUHJSAAAAAABJlIw0TAAAAAAAAFG1CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJjBymAAAAAAC2aQ1orQAAAAAAsAJQCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCYzDAAAAAAAAYw4oYQAAAAAAfSWMCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCVB7YQAAAAAAp0KPAAAAAAAAWCGMCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCYwVXAAAAAAAsApKsAAAAAAAhX+DUIwJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkHCAAAAAAAAFGNS2WVtgAAHyQ7Jjd3jAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQlQlx8AAAAAABA4DVCvo3gAAAAAADCTmYwJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQlQBVMAAAAAAHEVjAkJULoXAAAAAAB0w5mMCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJxpIAAAAAAE69UAkJCVCyQwAAAAAAdJ6gCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJjEgAAAAAAAAgUAkJCQlQuR8AAAAAAFNXUAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJUBE1AAAAAABVmQkJCQmMpEEAAAAAAAChTQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJjD9cAAAAAAASnVAJCQkJc5UAAAAAAAAwqIwJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQe0AAAAAACahFAJCQkJjBkAAAAAAABOaVAJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCVCrAAAAAAAAtyMJCQkJUAQAAAAAAACJKlAJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCVAFEgAAAAAAhi2MCQkJUDIAAAAAAAC2QlAJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkxDwAAAAAAThNQCQkJNJwAAAAAAABGLYwJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJZwAAAAAAAEhQCQkNnWoAAAAAAABbCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQlQmAAAAAAAAD5HDXc3WQAAAAAAAE+RjAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJUFBtQAAAAAAAALheVn4bAAAAAACwvF2MCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkeiHAPhwAAAAAAAAAAAAAAAACwuJ+7wIwJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQnGnnpnKSkpKSkpKSkpKSkpLDkdxG13jAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJjIyMjIyMjIyMjIyMjIyMjFANUIwJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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">
+<meta name="msapplication-config" content="/lib/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="format-detection" content="telephone=no">
+<!-- #BeginEditable "doctitle" -->
+<title>Arctan(x) Calculator | Inverse tangent calculator</title>
+<meta name="description" content="Online arctan(x) calculator. Inverse tangent calculator.Enter the tangent value, select degrees (°) or radians (rad) and press the  =  button.">
+<style>
+
+
+.calc td { font-family:Arial, Helvetica, sans-serif; }
+.calc span { font-size:xx-large; font-family:"Times New Roman", Times, serif; }
+.calc input[type=text] { font-size:x-large; padding:5px; }
+.calc button { padding:7px; margin-top:10px; margin-bottom:10px; font-size:large; }
+.calc textarea { width:100%; font-size:large; }
+.calc tr:nth-child(4) td { font-size:x-large; }
+@media all and (max-width: 576px) {
+	.calc { width:100%; padding:10px; }
+	.calc input[type=text] { width:calc(100% - 40px); }
+	.calc tr:first-child input[type=text] { width:140px; }
+}
+@media all and (min-width: 577px) {
+	.calc { padding:20px; }
+	.calc input[type=text] { width:330px; }
+	.calc tr:first-child input[type=text] { width:220px; }
+}
+</style>
+<!-- #EndEditable -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" data-savepage-src="//cse.google.com/adsense/search/async-ads.js" src=""></script><script type="text/javascript" async="" data-savepage-src="https://www.google-analytics.com/analytics.js" src=""></script><script type="text/javascript" async="" data-savepage-src="https://cse.google.com/cse.js?cx=005780289899100091646:pgzw8x741mk" src=""></script><script async="" data-savepage-src="https://www.googletagmanager.com/gtag/js?id=UA-2665076-2" src=""></script>
+<script></script>
+
+<style data-savepage-href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" type="text/css">.cc-window{opacity:1;transition:opacity 1s ease}.cc-window.cc-invisible{opacity:0}.cc-animate.cc-revoke{transition:transform 1s ease}.cc-animate.cc-revoke.cc-top{transform:translateY(-2em)}.cc-animate.cc-revoke.cc-bottom{transform:translateY(2em)}.cc-animate.cc-revoke.cc-active.cc-bottom,.cc-animate.cc-revoke.cc-active.cc-top,.cc-revoke:hover{transform:translateY(0)}.cc-grower{max-height:0;overflow:hidden;transition:max-height 1s}
+.cc-link,.cc-revoke:hover{text-decoration:underline}.cc-revoke,.cc-window{position:fixed;overflow:hidden;box-sizing:border-box;font-family:Helvetica,Calibri,Arial,sans-serif;font-size:16px;line-height:1.5em;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999}.cc-window.cc-static{position:static}.cc-window.cc-floating{padding:2em;max-width:24em;-ms-flex-direction:column;flex-direction:column}.cc-window.cc-banner{padding:1em 1.8em;width:100%;-ms-flex-direction:row;flex-direction:row}.cc-revoke{padding:.5em}.cc-header{font-size:18px;font-weight:700}.cc-btn,.cc-close,.cc-link,.cc-revoke{cursor:pointer}.cc-link{opacity:.8;display:inline-block;padding:.2em}.cc-link:hover{opacity:1}.cc-link:active,.cc-link:visited{color:initial}.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap}.cc-banner .cc-btn:last-child{min-width:140px}.cc-highlight .cc-btn:first-child{background-color:transparent;border-color:transparent}.cc-highlight .cc-btn:first-child:focus,.cc-highlight .cc-btn:first-child:hover{background-color:transparent;text-decoration:underline}.cc-close{display:block;position:absolute;top:.5em;right:.5em;font-size:1.6em;opacity:.9;line-height:.75}.cc-close:focus,.cc-close:hover{opacity:1}
+.cc-revoke.cc-top{top:0;left:3em;border-bottom-left-radius:.5em;border-bottom-right-radius:.5em}.cc-revoke.cc-bottom{bottom:0;left:3em;border-top-left-radius:.5em;border-top-right-radius:.5em}.cc-revoke.cc-left{left:3em;right:unset}.cc-revoke.cc-right{right:3em;left:unset}.cc-top{top:1em}.cc-left{left:1em}.cc-right{right:1em}.cc-bottom{bottom:1em}.cc-floating>.cc-link{margin-bottom:1em}.cc-floating .cc-message{display:block;margin-bottom:1em}.cc-window.cc-floating .cc-compliance{-ms-flex:1;flex:1}.cc-window.cc-banner{-ms-flex-align:center;align-items:center}.cc-banner.cc-top{left:0;right:0;top:0}.cc-banner.cc-bottom{left:0;right:0;bottom:0}.cc-banner .cc-message{-ms-flex:1;flex:1}.cc-compliance{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:justify;align-content:space-between}.cc-compliance>.cc-btn{-ms-flex:1;flex:1}.cc-btn+.cc-btn{margin-left:.5em}
+@media print{.cc-revoke,.cc-window{display:none}}@media screen and (max-width:900px){.cc-btn{white-space:normal}}@media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){.cc-window.cc-top{top:0}.cc-window.cc-bottom{bottom:0}.cc-window.cc-banner,.cc-window.cc-left,.cc-window.cc-right{left:0;right:0}.cc-window.cc-banner{-ms-flex-direction:column;flex-direction:column}.cc-window.cc-banner .cc-compliance{-ms-flex:1;flex:1}.cc-window.cc-floating{max-width:none}.cc-window .cc-message{margin-bottom:1em}.cc-window.cc-banner{-ms-flex-align:unset;align-items:unset}}
+.cc-floating.cc-theme-classic{padding:1.2em;border-radius:5px}.cc-floating.cc-type-info.cc-theme-classic .cc-compliance{text-align:center;display:inline;-ms-flex:none;flex:none}.cc-theme-classic .cc-btn{border-radius:5px}.cc-theme-classic .cc-btn:last-child{min-width:140px}.cc-floating.cc-type-info.cc-theme-classic .cc-btn{display:inline-block}
+.cc-theme-edgeless.cc-window{padding:0}.cc-floating.cc-theme-edgeless .cc-message{margin:2em 2em 1.5em}.cc-banner.cc-theme-edgeless .cc-btn{margin:0;padding:.8em 1.8em;height:100%}.cc-banner.cc-theme-edgeless .cc-message{margin-left:1em}.cc-floating.cc-theme-edgeless .cc-btn+.cc-btn{margin-left:0}</style>
+<script data-savepage-src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" src=""></script>
+<script></script>
+
+<script data-savepage-src="https://www.google.com/cse/static/element/aab18d33f43dc0c3/cse_element__en.js?usqp=CAI%3D" src="" type="text/javascript"></script><style data-savepage-href="https://www.google.com/cse/static/element/aab18d33f43dc0c3/default+en.css" type="text/css">/** Copyright 2005 Google Inc. All rights reserved. */
+
+/* the GSearchControl CSS Classes
+ * .gsc-control : the primary class of the control
+ */
+.gsc-control {
+  width: 300px;
+}
+
+.gsc-control div {
+  position: static;
+}
+
+.gsc-control-cse,
+.gsc-control-cse .gsc-table-result {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size : 13px;
+}
+
+.gsc-control-cse div {
+  position: static;
+}
+
+/* control inputs
+ * .gsc-search-box : the container that hosts the text input area
+ * .gsc-input : the text input area
+ * .gsc-keeper : the save link below savable results
+ */
+form.gsc-search-box {
+  font-size: 13px;
+  margin-top : 0;
+  margin-right : 0;
+  margin-bottom : 4px;
+  margin-left : 0;
+  width: 100%;
+}
+
+/*
+ * This table contains the input element as well as the search button
+ * Note that the search button column is fixed width, designed to hold the
+ * button div's background image
+ */
+table.gsc-search-box {
+  border-style : none;
+  border-width : 0;
+  border-spacing : 0 0;
+  width : 100%;
+  margin-bottom : 2px;
+}
+
+table.gsc-search-box td {
+  vertical-align : middle;
+}
+
+table.gsc-search-box td.gsc-input {
+  padding-right : 12px;
+}
+
+td.gsc-search-button {
+  width : 1%;
+}
+
+td.gsc-clear-button {
+  width : 14px;
+}
+
+.gsc-branding,
+.gcsc-branding {
+  display: flex;
+}
+
+.gsc-branding-text,
+.gcsc-branding-text {
+  vertical-align : top;
+  padding-bottom : 2px;
+  text-align : right;
+  font-size : 11px;
+  margin-right : 2px;
+  color : #666;
+}
+
+.gsc-branding-text:first-child,
+.gcsc-branding-text:first-child {
+  flex-grow: 1;
+}
+
+.gsc-branding-img-noclear,
+.gcsc-branding-img-noclear {
+  width : 51px;
+  vertical-align : bottom;
+}
+
+.gsc-branding-img,
+.gcsc-branding-img {
+  width : 65px;
+  vertical-align : bottom;
+}
+
+div.gsc-branding-youtube td.gsc-branding-img-noclear {
+  width : 55px;
+}
+
+div.gsc-branding-youtube td.gsc-branding-img {
+  width : 69px;
+}
+
+table.gsc-branding-vertical td.gsc-branding-text div.gsc-branding-text {
+  margin-right : 0;
+  text-align : center;
+}
+
+table.gsc-branding-vertical td.gsc-branding-img-noclear {
+  text-align : center;
+}
+
+div.gsc-branding-img,
+div.gsc-branding-img-noclear,
+img.gsc-branding-img,
+img.gsc-branding-img-noclear,
+div.gcsc-branding-img,
+div.gcsc-branding-img-noclear,
+img.gcsc-branding-img,
+img.gcsc-branding-img-noclear {
+  position: relative;
+  top: -1px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+img.gsc-branding-img,
+img.gsc-branding-img-noclear,
+img.gcsc-branding-img,
+img.gcsc-branding-img-noclear {
+  margin : 0 0 0 0;
+  padding-top: 0;
+  padding-bottom : 0;
+  border : none;
+  display : inline;
+}
+
+.gcsc-branding-text {
+  white-space: nowrap;
+}
+
+.gcsc-branding-text {
+  margin: 0 2px;
+}
+
+.gcsc-branding-img-noclear {
+  width: auto;
+}
+
+a.gsc-branding-clickable {
+  cursor : pointer;
+}
+
+.gsc-search-button {
+  margin-left : 2px;
+}
+
+div.gsc-clear-button {
+  display : inline;
+  text-align : right;
+  margin-left : 4px;
+  margin-right : 4px;
+  padding-left : 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: /*savepage-url=//www.google.com/cse/static/css/clear.gif*/ url();
+  cursor : pointer;
+}
+
+.gsc-search-box-tools .gsc-clear-button {
+  display: none;
+}
+
+.gsc-results-close-btn {
+  background-image: /*savepage-url=//www.google.com/images/nav_logo114.png*/ url();
+  background-repeat: no-repeat;
+  background-position: -140px -230px;
+  float: right;
+  display: none;
+  opacity: 0;
+  height: 12px;
+  width: 12px;
+  position: absolute !important;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.gsc-results-close-btn-visible {
+  display: block;
+  opacity: 1;
+}
+
+.gsc-results-wrapper-nooverlay {
+}
+
+.gsc-results-wrapper-overlay {
+  border: none;
+  margin: auto;
+  border-radius: 1px;
+  overflow: auto;
+  height: 80%;
+  -webkit-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -ms-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -o-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  border-collapse: separate;
+  background: white;
+  padding: 30px;
+  width: 70%;
+  position: fixed !important;
+  top: 5%;
+  left: 12%;
+  opacity: 0;
+  z-index: 100002;
+  visibility: hidden;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  /* For IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888')";
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888');
+
+}
+
+.gsc-results-wrapper-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.gsc-modal-background-image {
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  height: 130%;
+  width: 100%;
+  z-index: 100001;
+  background-color: white;
+  opacity: 0;
+  -ms-filter:"alpha(opacity=0)";
+  filter: alpha(opacity=0);
+  display: none;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.gsc-modal-background-image-visible {
+  opacity: 0.8;
+  -ms-filter:"alpha(opacity=80)";
+  filter: alpha(opacity=80);
+  display: block;
+}
+
+.gsc-overflow-hidden {
+  overflow: hidden;
+}
+/*
+ * Given that this is sitting in a variable width tabel cell, the idea is
+ * for it to consume the entire cell. The adjacent cell contains the search
+ * button and that is a fixed width cell.
+ */
+input.gsc-input {
+  padding: 1px 6px;
+  border: 1px solid #DDD;
+  width: 99%;
+}
+
+.gsc-keeper {
+  color: #3366cc;
+  text-decoration: underline;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: normal;
+
+  padding-left: 16px;
+  background-repeat: no-repeat;
+  background-position: 1px 3px;
+  background-image: /*savepage-url=//www.google.com/cse/static/css/blue_check.gif*/ url();
+}
+
+/* each section of results has a results header table
+ * .gsc-resultsHeader : the header itseld
+ * td.twiddleRegionCell : the section that controls twiddleing of the section to expand/collapse
+ * td.configLabelCell : the twiddler that controls active configuration of a searcher (used in GlocalSearch)
+ * .gsc-twiddle : the twiddle image, note, this is a div that wraps gsc-title so that standard image replacement is feasible
+ * .gsc-twiddle-closed : class added to gsc-twiddle when the twiddler is in the closed state
+ * .gsc-twiddle-opened : class added to gsc-twiddle when the twiddler is in the opened state
+ * .gsc-title : the section's title (e.g., Web Results, etc.)
+ * .gsc-stats : contains the result counts
+ * .gsc-stats
+ */
+.gsc-resultsHeader {
+  width : 100%;
+  clear : both;
+}
+
+.gsc-resultsHeader td.gsc-twiddleRegionCell{
+  width: 75%;
+}
+
+.gsc-resultsHeader td.gsc-configLabelCell{
+  text-align: right;
+  width: 75%;
+}
+
+/*
+ * note that the next three classes are all joined together
+ * to implement the twiddle image. apps can substitute in their
+ * own images but will need to account for the image size here
+ * as well as in the left padding of the title element
+ *
+ * Note: uds provides the following images that work with the geometry/padding defined below
+ *  to use these images simply over-ride the.gsc-twiddle-opened/-closed class and specify an alternate image
+ *  or use an image of your own design
+ */
+.gsc-resultsHeader .gsc-twiddle{
+  margin-top: 4px;
+  display: inline;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+.gsc-resultsHeader td.gsc-twiddle-closed div.gsc-twiddle{
+  background-image: /*savepage-url=//www.google.com/cse/static/css/arrow_close.gif*/ url();
+}
+.gsc-resultsHeader td.gsc-twiddle-opened div.gsc-twiddle{
+  background-image: /*savepage-url=//www.google.com/cse/static/css/arrow_open.gif*/ url();
+}
+
+.gsc-resultsHeader .gsc-title{
+  color: #676767;
+  margin-right: 10px;
+  padding-left: 14px;
+  display: inline;
+}
+
+.gsc-resultsHeader .gsc-stats {
+  color: #676767;
+  font-size: 11px;
+  font-weight: normal;
+  display : inline;
+}
+
+.gsc-resultsHeader td.gsc-twiddle-opened .gsc-stats {
+  display : none;
+}
+
+/*
+ * .gsc-results-selector : box surrounding individual selectors for 1, more, or all results
+ * .gsc-result-selector : an individual selector
+ * .gsc-one-result : single result selector
+ * .gsc-more-results : more (4) results selector
+ * .gsc-all-results : all results (8) selector
+ */
+.gsc-results-selector {
+  display : inline;
+}
+
+.gsc-resultsHeader td.gsc-twiddle-closed .gsc-results-selector {
+  display : none;
+}
+
+.gsc-result-selector {
+  cursor : pointer;
+  display : inline;
+  font-size : 13px;
+  padding-left : 13px;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+/* default mode is dark */
+.gsc-one-result {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/one-complex-dark.gif*/ url();
+}
+
+.gsc-more-results {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/more-complex-dark.gif*/ url();
+}
+
+.gsc-all-results {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/all-complex-dark.gif*/ url();
+  padding-right : 1px;
+}
+
+/* active mode is light */
+.gsc-one-result-active .gsc-one-result {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/one-complex-light-blue.gif*/ url();
+}
+
+.gsc-more-results-active .gsc-more-results {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/more-complex-light-blue.gif*/ url();
+}
+
+.gsc-all-results-active .gsc-all-results {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/all-complex-light-blue.gif*/ url();
+}
+
+.gsc-resultsHeader .gsc-configLabel{
+  color: #676767;
+  display: inline;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.gsc-resultsHeader td.gsc-configLabelCell span.gsc-twiddle-closed {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: /*savepage-url=//www.google.com/cse/static/css/settings.gif*/ url();
+}
+
+
+/* tabbed mode of search control
+ * .gsc-tabsArea : the box containing all of the tabs
+ * .gsc-tabsAreaInvisible : same as above, but this is the state when search has been cleared
+ * .gsc-tabHeader : an individual tab
+ * .gsc-tabHeader.gsc-tabhActive : the active tab
+ * .gsc-tabHeader.gsc-tabhInactive : an inactive tab
+ * .gsc-tabData : the data area/box containg results and header data for each tab
+ * .gsc-tabData.gsc-tabdActive : the data area for the active tab
+ * .gsc-tabData.gsc-tabdInactive : the data area for inactive tabs
+ */
+.gsc-tabsArea {
+  clear: both;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  }
+
+.gsc-tabsArea .gs-spacer {
+  font-size : 1px;
+  margin-right : 0;
+  overflow : hidden;
+}
+
+.gsc-tabsArea .gs-spacer-opera {
+  margin-right : 0;
+}
+
+.gsc-tabsAreaInvisible,
+.gsc-refinementsAreaInvisible,
+.gsc-refinementBlockInvisible {
+  display : none;
+  }
+
+.gsc-tabHeader {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 2px;
+  margin-top: 2px;
+  }
+
+.gsc-tabHeader.gsc-tabhActive {
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+  border-top: 2px solid #ff9900;
+  color: black;
+  }
+
+.gsc-tabHeader.gsc-tabhInactive {
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+  border-top: 2px solid #e9e9e9;
+  background: #e9e9e9;
+  color: #676767;
+  cursor: pointer;
+  }
+
+.gsc-tabData.gsc-tabdActive {
+  display: block;
+  }
+
+.gsc-tabData.gsc-tabdInactive {
+  display: none;
+  }
+
+/* gsc-resultsbox-invisible is preferred over gsc-tabdActive */
+.gsc-tabData.gsc-tabdActive.gsc-resultsbox-invisible{
+  display: none;
+  }
+
+.gsc-refinementsArea {
+  clear: both;
+  margin-bottom: 4px;
+  padding-left: 8px;
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: 5px
+  }
+
+.gsc-refinementHeader {
+  margin-right: 2px;
+  padding: 2px 8px 0 8px;
+  }
+
+.gsc-refinementHeader.gsc-refinementhActive {
+  font-weight: bold;
+  }
+
+.gsc-refinementHeader.gsc-refinementhInactive {
+  text-decoration: underline;
+  cursor: pointer;
+  }
+
+/* tab specific results header supression
+ * - no twiddle, tabbed mode runs in full expand mode
+ * - no title
+ * - no stats
+ */
+.gsc-tabData .gsc-resultsHeader .gsc-title {
+  display: none;
+  }
+
+.gsc-tabData .gsc-resultsHeader .gsc-stats {
+  display: none;
+  }
+
+.gsc-tabData .gsc-resultsHeader .gsc-results-selector {
+  display : none;
+}
+
+/* style for auto-completion table
+ * .gsc-completion-selected : highlighted completions.
+ * .gsc-completion-container : styling for the table which contains the completions
+ * .gsc-completion-promotion-selected: highlighted promotions
+ */
+.gsc-completion-selected {
+  background : #EEEEEE;
+  cursor: default;
+}
+
+.gsc-completion-selected .gsc-completion-promotion-table {
+  cursor: pointer;
+}
+
+.gsc-completion-container {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  background: white;
+  border : 1px solid #DDD;
+  border-top-color: #D9D9D9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin: 0;
+}
+
+.gsc-completion-title {
+  color: #0000cc;
+  line-height: normal;
+  white-space: normal;
+}
+
+.gsc-completion-snippet {
+  line-height: normal;
+  white-space: normal;
+}
+
+.gsc-completion-container .gsc-completion-icon-cell {
+  width: 42px;
+  height: 42px;
+  padding-right: 10px;
+}
+
+.gsc-completion-icon {
+  /* place image in the middle */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 1px solid #dddddd;
+}
+
+.gsc-completion-container .gsc-completion-promotion-table {
+  font-size : inherit;
+  background: inherit;
+  margin: 5px 0;
+  width: 100%;
+}
+
+/* the results for each section
+ * .gsc-resultsbox-{visible,invisible} : a complete-collection of results including headers
+ * .gsc-results : the collection of results for a given searcher
+ * .gsc-result : a generic result within the control. each result has this class, as well as .gsc-xxxResult where xxx is web, image, local, blog, etc.
+ */
+.gsc-resultsbox-visible {
+  display : block;
+}
+
+.gsc-resultsbox-invisible {
+  display : none;
+}
+
+.gsc-results {
+  padding-bottom: 2px;
+  width : 99%;
+}
+
+.gsc-result {
+  margin-bottom: 10px;
+}
+
+.gsc-result .gs-title {
+  height: 1.4em;
+  overflow: hidden;
+}
+
+/* specialized, result type specific, fine grained controls */
+.gsc-result div.gs-watermark {
+  display: none;
+}
+
+/* Ads
+ */
+.gsc-results .gsc-result img.gs-ad-marker {
+  display: none;
+}
+
+.gsc-wrapper {
+  position : relative;
+  display : block;
+}
+
+.gsc-adBlock {
+  position : relative;
+  display : block;
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 4px;
+}
+
+.gsc-adBlock h2 {
+  float : right;
+  margin : 3px 5px 0;
+  font-weight : normal;
+  font-size : .9em;
+  color : #676767;
+}
+
+.gsc-adBlock .gsc-ad {
+  padding-left : 8px;
+  padding-top : 5px;
+  padding-right : 3px;
+}
+
+.gsc-adBlock .gsc-ad a {
+  font-weight : bolder;
+  color : #0000CC;
+  line-height : 1.4em;
+}
+
+.gsc-adBlock .gsc-ad cite {
+  font-style : normal;
+  color : green;
+}
+
+.gsc-adBlock .gsc-ad span {
+  padding-left : 8px;
+}
+
+.gsc-adBlockNoHeight {
+    height : 0;
+}
+
+.gsc-adBlockInvisible {
+  display : none;
+}
+
+.gsc-adBlockVertical {
+  position : relative;
+  display : block;
+  float : right;
+  clear: right;
+  width : 30%;
+}
+
+.gsc-adBlockBottom {
+  position : relative;
+  display : block;
+  border-bottom: 1px solid #E9E9E9;
+  border-top: 1px solid #E9E9E9;
+  margin-bottom: 4px;
+}
+
+.gsc-thinWrapper {
+  width : 69%;
+  float : left;
+  overflow : hidden;
+}
+
+.gsc-adBlockVertical h2 {
+  text-align : center;
+  font-weight : normal;
+  font-size : .9em;
+  color : #676767;
+  margin-top : 6px;
+}
+
+.gsc-adBlockVertical .gsc-ad {
+  padding-left : 8px;
+  padding-top : 5px;
+}
+
+.gsc-adBlockVertical .gsc-ad a {
+  font-weight : bolder;
+  color : #0000CC;
+  line-height : 1.4em;
+}
+
+.gsc-adBlockVertical .gsc-ad cite {
+  font-style : normal;
+  color : green;
+  display : block;
+}
+
+.gsc-adBlockVertical .gsc-ad span {
+}
+
+/* Standard configuration div/form */
+div.gsc-config {
+  border: 1px solid #e9e9e9;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top : 2px;
+  padding-left : 6px;
+  padding-right : 6px;
+  padding-bottom : 6px;
+}
+
+form.gsc-config {
+  margin-bottom : 0;
+}
+
+.gsc-configSetting {
+  margin-top : 6px;
+  }
+
+.gsc-configSetting_Label {
+  color: #676767;
+  }
+
+.gsc-configSettingInput {
+  color: #676767;
+  border: 1px solid #e9e9e9;
+  width: 75%;
+  }
+
+.gsc-configSettingCheckbox {
+  color: #676767;
+  margin-right: 6px;
+  }
+
+.gsc-configSettingCheckboxLabel {
+  display : inline;
+  color: #676767;
+  }
+
+div.gsc-configSettingSubmit {
+  margin-top : 8px;
+  text-align : right;
+}
+
+input.gsc-configSettingSubmit {
+  display: inline;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* Added so elements inside a result are properly cleared by the container. */
+.gsc-webResult:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.gsc-webResult {
+  zoom: 1;  /* IE-specific hack to get the layout clearing right. */
+}
+
+/* Wrapper for a result. */
+.gsc-webResult .gsc-result {
+  margin: 0;
+  padding: .5em 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.gsc-above-wrapper-area {
+  border-bottom: 1px solid #E9E9E9;
+  padding: 5px 0 5px 0;
+}
+
+.gsc-above-wrapper-area-invisible {
+  display: none;
+}
+
+.gsc-above-wrapper-area-container {
+  width: 100%;
+}
+
+.gsc-result-info {
+  text-align: left;
+  color: #676767;
+  font-size: 13px;
+  padding-left: 8px;
+  margin: 10px 0 10px 0;
+}
+
+.gsc-result-info-container {
+  text-align: left;
+}
+
+.gsc-result-info-invisible {
+  display: none;
+}
+
+.gsc-orderby-container {
+  text-align: right;
+  background: transparent;
+}
+
+.gsc-orderby-invisible {
+  display: none;
+}
+
+.gsc-orderby-label {
+  color: #676767;
+  padding: 5px 5px 6px 0;
+}
+
+.gsc-getlink-container {
+  padding-left: 5px;
+  padding-top: 1px;
+  width: 45px;
+}
+
+.gsc-getlink-invisible {
+  display: none;
+}
+
+.gsc-getlink {
+  width: 5px;
+}
+
+.gsc-getlink-box {
+  background-color: rgb(245,245,245);
+  border: 1px solid #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 1px 1px #eee;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #444;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  max-width: 90%;
+  min-width: 10px;
+  outline: 0;
+  padding: 0 28px 0 6px;
+  position: relative;
+  text-align: center;
+}
+
+.gsc-control-cse .gsc-getlink-textbox {
+  background: #fff;
+  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: default;
+  margin: 0;
+  max-height: 360px;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  z-index: 7;
+  width: auto;
+}
+
+.gsc-getlink-inputbox {
+  width: 300px;
+  margin-top: 5px;
+}
+
+.gsc-getlink-label {
+  width: 100%;
+  font-size: 14px;
+}
+
+.gsc-getlink-image {
+  height: 29px;
+}
+
+.gsc-getlink-text-invisible {
+  display: none;
+}
+
+.gsc-selected-option-container {
+  background-color: transparent;
+  border: 1px solid #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 1px 1px #eee;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #444;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  max-width: 90%;
+  min-width: 54px;
+  outline: 0;
+  padding: 0 28px 0 6px;
+  position: relative;
+  text-align: center;
+}
+
+.gsc-selected-option {
+  position: relative;
+  width: 100%;
+}
+
+.gsc-control-cse .gsc-option-selector {
+  border: none;
+  height: 11px;
+  margin-top: -4px;
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  width: 7px;
+  padding: 0 5px 0 5px;
+  background: /*savepage-url=//ssl.gstatic.com/ui/v1/disclosure/small-grey-disclosure-arrow-down.png*/ url() center no-repeat
+}
+
+.gsc-option-menu-invisible {
+  display: none;
+}
+
+.gsc-control-cse .gsc-option-menu-container {
+  color: #000;
+  font-size: 80%;
+  position: relative;
+}
+
+.gsc-control-cse .gsc-option-menu {
+  background: #fff;
+  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: default;
+  font-size: 13px;
+  margin: 0;
+  max-height: 360px;
+  outline: none;
+  padding: 6px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 7;
+}
+
+.gsc-option-menu-item {
+  color: #777;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 0 30px 0 30px;
+  white-space: nowrap;
+}
+
+.gsc-option-menu-item-highlighted {
+  background-color: #EEE;
+  border-color: #EEE;
+  border-width: 1px 0;
+  color: #333;
+}
+
+.gsc-option {
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+  line-height: 27px;
+  text-align: left;
+}
+
+.gs-web-image-box,
+.gs-promotion-image-box {
+  float: left;
+  padding: 2px 8px 2px 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align:center;
+  width: 62px; /* default width + 1px border */
+}
+
+.gs-web-image-box img.gs-image,
+.gs-promotion-image-box img.gs-promotion-image {
+  border: 1px solid #e2e2e2;
+  max-width: 60px; /* Small icons width. */
+  max-height: 120px;  /* Limit height too. */
+  /* IE-specific hack to simulate max-width and max-height. */
+  /* For IE, image size will be 105 because various default
+   * values for margins and borders are different.
+   */
+  width: expression(this.width > 64 ? '64px': true);
+  height: expression(this.height > 120 ? '120px': true);
+}
+
+div.gs-action {
+  display: inline;
+  margin-right: 0.6em;
+}
+div.gs-action a.gs-action {
+  color: #7777CC;
+}
+div.gs-action.cart a.gs-action,
+div.gs-action.star a.gs-action,
+div.gs-action.rss a.gs-action,
+div.gs-action.download a.gs-action,
+div.gs-action.email a.gs-action,
+div.gs-action.mobile a.gs-action,
+div.gs-action.share a.gs-action,
+div.gs-action.fullscreen a.gs-action,
+div.gs-action.generic a.gs-action,
+div.gs-action.link a.gs-action {
+  padding-left: 18px;
+  background:transparent /*savepage-url=//www.google.com/cse/images/action_icons_sprite.gif*/ url() no-repeat;
+}
+div.gs-action.cart a.gs-action {
+  background-position: 0 0;
+}
+div.gs-action.star a.gs-action {
+  background-position: -16px -34px;
+}
+div.gs-action.rss a.gs-action {
+  background-position: -48px -98px;
+}
+div.gs-action.download a.gs-action {
+  background-position: -64px -128px;
+}
+div.gs-action.email a.gs-action {
+  background-position: -112px -224px;
+}
+div.gs-action.mobile a.gs-action {
+  background-position: -131px -257px;
+}
+div.gs-action.share a.gs-action {
+  background-position: -32px -64px;
+}
+div.gs-action.fullscreen a.gs-action {
+  background-position: -79px -162px;
+}
+div.gs-action.generic a.gs-action {
+  background-position: -144px -290px;
+}
+div.gs-action.link a.gs-action {
+  background-position: -159px -321px;
+}
+
+/* Image Search
+ */
+.gsc-imageResult .gs-imageResult .gs-text-box .gs-ellipsis {
+  overflow:hidden;
+  text-align: left;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  -ms-text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.gsc-imageResult {
+  float: left;
+  margin-bottom: 1em;
+  margin-right: 20px;
+}
+
+.gsc-imageResult-column {
+  margin-right: 70px;
+}
+
+.gs-imageResult {
+  overflow: hidden;
+}
+
+.gs-imageResult .gs-image-box {
+  height: 86px; /* default height + 1px border */
+  position : relative;
+}
+
+.gs-imageResult .gs-text-box {
+  text-align: center;
+  overflow : hidden;
+  height: 4em;
+}
+
+/* No padding for image result */
+.gs-imageResult div.gs-title,
+.gs-imageResult .gs-snippet,
+.gs-imageResult .gs-visibleUrl,
+.gs-imageResult .gs-visibleUrl-short,
+.gs-imageResult .gs-spelling {
+  padding: 0;
+}
+
+.gs-imageResult .gs-snippet {
+  overflow : hidden;
+  line-height: 1em;
+  white-space : nowrap;
+}
+.gs-imageResult .gs-visibleUrl {
+  overflow : hidden;
+  line-height: 1.3em;
+  height: 1.3em;
+}
+
+.gs-imageResult .gs-size {
+  color: #6f6f6f;
+}
+
+.gs-imageResult .gs-image-box {
+  text-align: center; /* center align image in image box */
+}
+
+.gs-imageResult .gs-image-box img.gs-image {
+   border: none;
+}
+
+/* Classic layout related styles */
+
+/* Do not show title for compact layout such as classic and popup */
+.gs-imageResult-classic .gs-text-box .gs-title {
+  display: none;
+}
+
+/* Column layout related styles */
+
+.gs-imageResult-column {
+  width: 474px; /* image box width (114px) + image box right margin (10px) + text box width (350px) */
+  height: 84px; /* image box height */
+}
+
+.gs-imageResult-column .gs-image-box {
+  float: left;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.gs-imageResult-column .gs-text-box {
+  float: left;
+  width: 350px;
+  height: 86px; /* image box height */
+}
+
+.gsc-imageResult-column .gs-imageResult-column .gs-text-box .gs-title {
+  height: auto;
+  text-align: left;
+  white-space:normal;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  -ms-text-overflow:ellipsis;
+}
+
+.gs-imageResult-column .gs-text-box .gs-size {
+  display: none;
+}
+
+/* Popup layout related styles */
+
+/* No margin, padding or border for popup layout */
+.gsc-imageResult.gsc-imageResult-popup,
+.gsc-results .gsc-imageResult-popup:hover {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.gsc-imageResult .gs-imageResult-popup {
+  width: auto; /* Override the default image result width */
+  overflow: visible; /* popup box may overflow and should be visible */
+  position: relative;
+}
+
+/* Instead put margin bottom and right on searcher image thumbnail. */
+.gs-imageResult-popup .gs-image-thumbnail-box {
+  padding: 5px;
+}
+
+.gs-imageResult-popup .gs-image-box {
+  width: auto;
+}
+
+.gs-imageResult-popup .gs-image-popup-box {
+  width: auto;
+  position : absolute;
+  padding: 10px;
+  background: white;
+  left: 0;
+  top: 0;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  -webkit-outline:1px solid rgba(0,0,0,0.2);
+  display: none;
+}
+
+.gs-imageResult-popup .gs-image-popup-box .gs-image-box {
+  height: auto; /* override default image box width (86px) */
+  width: auto; /* override default image box height (114px) */
+  margin-bottom: 10px;
+}
+
+.gs-imageResult-popup .gs-image-popup-box .gs-text-box {
+  height: auto;
+  width: auto;
+}
+
+/* Do not show title for compact layout such as classic and popup */
+.gs-imageResult-popup .gs-text-box .gs-title {
+   display: none;
+}
+
+
+/* Video Search
+ * - single line title
+ */
+
+.gsc-videoResult .gs-videoResult .gs-title {
+  line-height: 1.3em;
+  height: 1.3em;
+  overflow: hidden;
+  }
+
+.gsc-videoResult .gs-videoResult .gs-snippet {
+  line-height: 1.3em;
+  max-height: 2.6em;
+  overflow: hidden;
+  }
+
+/* trailing more link at the bottom of
+ * a collection of results
+ */
+.gsc-imageResult .gsc-trailing-more-results {
+  clear : both;
+}
+
+.gsc-results .gsc-trailing-more-results {
+  margin-bottom : 10px;
+}
+
+.gsc-results .gsc-trailing-more-results,
+.gsc-results .gsc-trailing-more-results * {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+/* trailing cursor section
+ */
+.gsc-imageResult .gsc-cursor-box {
+  clear : both;
+}
+
+.gsc-results .gsc-cursor-box .gsc-trailing-more-results {
+  margin-bottom : 0;
+  display : inline;
+}
+
+.gsc-results .gsc-cursor {
+  display : inline;
+}
+
+.gsc-results .gsc-cursor-box {
+  margin-bottom : 10px;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+  cursor : pointer;
+  color : #000000;
+  text-decoration: underline;
+  margin-right : 8px;
+  display : inline;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  cursor : default;
+  color : #A90A08;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+
+
+/*** End of Control, Begin Results ***/
+
+/* generic, cross cutting result style
+ * - in the form of .gs-result .gs-xxx where xxx is the generic style
+ * .gs-title : typically the first line of a result, typically a link, image results over ride this, since for image results, the image is the link
+ * .gs-divider : typically seperates results from ads
+ * .gs-visibleUrl : typically the last line of a result, displayed in green. sometimes a link (like in blog search)
+ * .gs-clusterUrl : for news, and other similar services, this is a cluster of additional results
+ * img.gs-image : an actial image in a result
+ * .gs-phone : a phone number
+ * .gs-address : an address (includes street, city, region, country)
+ * .gs-streetAddress : a street (including #)
+ * .gs-city : a city
+ * .gs-region : a region (zip code, area, etc.)
+ * .gs-country : a country
+ * .gs-snippet : snippetized content
+ * .gs-watermark : indicator that user selected this result
+ * .gs-metadata : generic metadata, e.g.,
+ * .gs-image-box : generic container for a result's image (within a table)
+ * .gs-text-box : generic container for a result's text content (within a table). Note that this class, and image-box are only used in video
+ */
+.gs-result .gs-title,
+.gs-result .gs-title * {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+.gsc-control-cse .gs-spelling,
+.gsc-control-cse .gs-result .gs-title,
+.gsc-control-cse .gs-result .gs-title * {
+  font-size: 16px;
+}
+
+.gsc-control-cse .gs-result .gs-spelling-original {
+  font-size: 13px;
+}
+
+.gs-divider {
+  padding-bottom: 8px;
+  text-align: center;
+  color: #676767;
+}
+
+.gs-result a.gs-visibleUrl,
+.gs-result .gs-visibleUrl {
+  color: #008000;
+  text-decoration: none;
+}
+
+/* relative and absolute dates, note, news/books inlines these */
+.gs-relativePublishedDate,
+.gs-publishedDate {
+  color: #6f6f6f;
+  text-decoration: none;
+}
+.gs-result a.gs-clusterUrl,
+.gs-result .gs-clusterUrl {
+  color: #008000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.gs-newsResult .gs-publisher {
+  color: #6f6f6f;
+  display : inline;
+  text-decoration: none;
+}
+
+/*
+ * For news results there are two dates...
+ * The relative date is visible while in the
+ * search control and the published date
+ * is visible when clipped. Why? It doesn't
+ * make sense to say 4 hours ago for a clipped
+ * result...
+ */
+
+/* establish the base style */
+.gs-newsResult .gs-relativePublishedDate,
+.gs-newsResult .gs-publishedDate {
+  display : inline;
+  margin-left : 4px;
+}
+
+/* base styling for relative date is none */
+.gs-blogResult .gs-relativePublishedDate,
+.gs-newsResult .gs-relativePublishedDate {
+  display : none;
+}
+
+/* suppress publishedDate while in the control */
+.gsc-blogResult .gs-blogResult .gs-publishedDate,
+.gsc-newsResult .gs-newsResult .gs-publishedDate {
+  display : none;
+}
+
+/* enable relativePublishedDate while in the control */
+.gsc-blogResult .gs-blogResult .gs-relativePublishedDate,
+.gsc-newsResult .gs-newsResult .gs-relativePublishedDate {
+  display : inline;
+}
+
+.gs-newsResult .gs-location {
+  color: #6f6f6f;
+  display : inline;
+  text-decoration: none;
+}
+
+.gs-promotion .gs-title,
+.gs-promotion .gs-title * {
+  text-decoration: none;
+}
+
+.gs-promotion a.gs-title,
+.gs-promotion a.gs-title * {
+  text-decoration: underline;
+}
+
+.gs-title .gs-promotion-title-right {
+  color: #000000;
+}
+
+.gsc-webResult.gsc-result.gsc-promotion {
+  background-color: #fff;
+}
+
+span.gs-fileFormat {
+  color: #666666;
+  font-size: 12px;
+}
+
+span.gs-fileFormatType {
+  font-size: 12px;
+}
+
+.gs-promotion table {
+  border : none;
+  border-style : none;
+  border-width : 0;
+  border-spacing : 0 0;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.gs-promotion table .gs-snippet a span.gs-title,
+.gs-promotion table .gs-snippet a span.gs-title * {
+  font-size: 13px;
+}
+
+.gs-promotion em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.gs-promotion .gs-title em {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.gs-result img.gs-image,
+.gs-result img.gs-promotion-image {
+  vertical-align : middle;
+  border : 1px solid #e2e2e2;
+}
+
+.gs-result div.gs-phone {}
+
+.gs-result .gs-directions,
+.gs-result .gs-directions * {
+  color: #7777cc;
+  font-weight: normal;
+  text-decoration : underline;
+  cursor : pointer;
+}
+
+.gs-secondary-link,
+.gs-secondary-link * {
+  color: #7777cc;
+  font-weight: normal;
+  text-decoration : underline;
+  cursor : pointer;
+}
+
+/* wrapper around user supplied to/from mode directions
+ * normally this is disabled by default, and gs-directions is enabled
+ * apps can easily switch this by setting display:block on the rule below,
+ * and display:none on the rule above
+ * e.g., add these two rules to switch local results into
+ * alternate style driving directions
+ * .gs-localResult .gs-directions-to-from { display : block; }
+ * .gs-localResult .gs-directions { display : none; }
+ */
+.gs-result .gs-directions-to-from {
+  display : none;
+  margin-top : 4px;
+}
+.gs-result .gs-directions-to-from .gs-label {
+  display : inline;
+  margin-right : 4px;
+}
+
+.gs-result .gs-directions-to-from div.gs-secondary-link {
+  display : inline;
+}
+
+.gs-result .gs-directions-to-from .gs-spacer {
+  display : inline;
+  margin-right : 3px;
+  margin-left : 3px;
+}
+
+.gs-videoResult a.gs-publisher,
+.gs-videoResult .gs-publisher {
+  color: #008000;
+  text-decoration: none;
+}
+
+.gs-result a {
+  cursor: pointer;
+}
+
+.gs-result .gs-address {
+}
+
+.gs-result .gs-snippet {
+}
+
+.gsc-loading-fade .gsc-result-info,
+.gsc-loading-fade .gsc-loading-resultsRoot,
+.gsc-loading-resultsRoot, /* customized root */
+.gsc-loading-fade .gsc-loading-refinementsArea,
+.gsc-loading-fade .gsc-adBlock,
+.gsc-loading-fade .gsc-adBlockVertical,
+.gsc-loading-fade .gsc-adBlockNoHeight {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=33.3)";
+  filter: alpha(opacity=33.3);
+  opacity: 0.333;
+}
+
+.gs-no-results-result .gs-snippet,
+.gs-error-result .gs-snippet {
+  padding : 5px;
+  margin : 5px;
+  border : 1px solid rgb(255,204,51);
+  background-color : rgb(255,244,194);
+}
+
+.gs-result .gs-watermark{
+  font-size: 10px;
+  color: #7777cc;
+}
+
+div.gs-results-attribution {
+  text-align : center;
+  margin-bottom : 4px;
+}
+
+div.gs-results-attribution,
+div.gs-results-attribution * {
+  font-size : 10px;
+  color : #676767;
+  text-decoration : none;
+}
+
+div.gs-results-attribution a {
+  color: #0000cc;
+  cursor : pointer;
+}
+
+div.gs-results-attribution a:hover {
+  text-decoration : underline;
+}
+
+.gs-result .gs-metadata{
+  color: #676767;
+}
+
+/* searcher specific styling for
+ * - web ad
+ * - web
+ * - local
+ * - image (none)
+ * - blog (none)
+ * - video (none)
+ */
+
+/* webAd search specific over rides
+ * .gs-ad-marker : disabled in control, but on in green to indicate clipped result is an ad
+ */
+.gs-localAd img.gs-ad-marker,
+.gs-webAd img.gs-ad-marker {
+  padding-left: 4px;
+}
+
+/* default is to not show long mode visible urls
+ * apps should selectively enable this while disabling
+ * div.gs-visibleUrl-short
+ */
+.gs-webResult div.gs-visibleUrl-long,
+.gs-promotion div.gs-visibleUrl-long {
+  overflow : hidden;
+  display : none;
+}
+
+/* Per result labels
+ */
+.gs-webResult div.gs-per-result-labels a.gs-label {
+  text-decoration : underline;
+  cursor : pointer;
+  padding : 3px;
+  color : black;
+}
+
+.gs-webResult div.gs-per-result-labels a.gs-label.gs-labelActive {
+  cursor : default;
+  text-decoration : none;
+}
+
+/* local search specific over rides
+ * - city, region displayed inline
+ * - country supressed
+ * - small font size for info window's
+ */
+
+.gs-localAd div.gs-address * {
+  color : #676767;
+}
+
+.gs-localAd div.gs-street {
+  display: inline;
+}
+
+div.gs-city {
+  display: inline;
+}
+
+div.gs-region {
+  display: inline;
+}
+
+div.gs-country {
+  display: none;
+}
+
+div.gs-infoWindow * {
+  font-size: 11px;
+  }
+
+/* video search specific over rides
+ * - align the table data
+ * - default image width garuntee
+ * - appropriate cell seperation
+ */
+
+/* todo(markl): workaround until gre in gmail fixes his styles */
+.gs-videoResult * {
+  font-size: 13px;
+  }
+
+/*
+.gs-videoResult td .gs-image {
+  vertical-align : middle;
+}
+
+.gs-videoResult td.gs-image-box {
+  background-color : #000000;
+}*/
+
+.gs-videoResult td div.gs-image-box {
+  width : 110px;
+  height : 78px;
+}
+
+.gs-videoResult td div.gs-text-box {
+  vertical-align: top;
+  margin-left: 4px;
+  }
+
+
+/* book search specific over rides
+ * - default image width garuntee
+ * - appropriate cell seperation
+ */
+
+div.gs-book-image-box td,
+.gs-bookResult td {
+  vertical-align : top;
+}
+
+div.gs-book-image-box,
+div.gs-book-image-box div {
+  position : static;
+  text-align : start;
+}
+
+div.gs-book-image-box {
+  width : 75px;
+  height : 90px;
+}
+
+.gs-bookResult td div.gs-text-box {
+  vertical-align: top;
+  margin-left: 4px;
+  }
+
+div.gs-book-image-box img {
+  border-spacing : 0 0;
+  border : none;
+}
+
+div.gs-book-image-box div.gs-row-1 {
+  line-height : 7px;
+}
+
+div.gs-book-image-box img.gs-pages {
+  height : 7px;
+  width : 45px;
+}
+
+div.gs-book-image-box img.gs-page-edge {
+  height : 7px;
+  width : 11px;
+}
+
+div.gs-book-image-box div.gs-row-2 {
+}
+
+div.gs-book-image-box img.gs-image {
+  height : 80px;
+  border : 1px solid #a0a0a0;
+}
+
+.gs-bookResult .gs-author {
+  display : inline;
+  color: #6f6f6f;
+}
+.gs-bookResult .gs-publishedDate {
+  display : inline;
+}
+
+.gs-bookResult .gs-pageCount {
+  display : inline;
+  color: #6f6f6f;
+  margin-left : 4px;
+}
+
+.gs-bookResult .gs-id {}
+
+
+
+/* book search specific over rides
+ * - default image width garuntee
+ * - appropriate cell seperation
+ */
+
+.gs-patentResult td {
+  vertical-align : top;
+}
+.gs-patentResult .gs-patent-number,
+.gs-patentResult .gs-publishedDate,
+.gs-patentResult .gs-author {
+  display:inline;
+}
+
+.gs-patentResult .gs-image-box {
+  padding-right : 8px;
+}
+
+.gs-patentResult img.gs-image {
+  border : 1px solid #7777cc;
+}
+
+.gs-spelling a {
+  color: #0000cc;
+  cursor: pointer;
+  text-decoration : underline;
+}
+
+.gsc-control-cse:after {
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility: hidden;
+}
+
+.gs-bidi-start-align {
+  text-align: left;
+}
+
+.gs-bidi-end-align {
+  text-align: right;
+}
+
+.gsc-control-cse-zh_CN .gs-snippet b,
+.gsc-control-cse-zh_CN .gs-promotion em,
+.gsc-control-cse-zh_TW .gs-snippet b,
+.gsc-control-cse-zh_TW .gs-promotion em {
+  color: #C03;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.gsc-snippet-metadata {
+  color: #767676;
+  vertical-align: top;
+}
+
+.gsc-role {
+  color: #767676;
+}
+
+.gsc-tel {
+  color: #767676;
+}
+
+.gsc-org {
+  color: #767676;
+}
+
+.gsc-location {
+  color: #767676;
+}
+
+.gsc-rating-bar {
+  vertical-align: top;
+  display: inline-block;
+  width: 64px;
+  height: 12px;
+  background: transparent /*savepage-url=/cse/static/css/cse_snippets_stars.png*/ url() -65px 0 no-repeat;
+  overflow:hidden;
+  margin: 2px 0 0 0;
+}
+
+.gsc-rating-bar span {
+  vertical-align: top;
+  display: inline-block;
+  height: 12px;
+  background: transparent /*savepage-url=/cse/static/css/cse_snippets_stars.png*/ url() 0 0 no-repeat;
+  padding: 2px 0 0 0;
+}
+
+.gsc-review-agregate-first-line {
+  margin: 0 40px 0 0;
+  padding: 6px 0;
+}
+
+.gsc-review-agregate-odd-lines, .gsc-review-agregate-even-lines {
+  margin: 0 40px 0 0;
+  padding: 6px 0;
+  border-top: 1px solid #EBEBEB;
+}
+
+.gsc-reviewer {
+  color: #00c;
+}
+
+.gsc-author {
+  color: #00c;
+}
+
+.gsc-table-result,
+.gs-promotion-table {
+  border-spacing: 0px;
+}
+
+.gsc-table-cell-thumbnail,
+.gs-promotion-image-cell {
+  vertical-align: top;
+}
+
+.gsc-table-cell-snippet-close,
+.gs-promotion-text-cell {
+  vertical-align: top;
+  width: 100%;
+}
+
+.gsc-table-cell-snippet-open {
+  vertical-align: top;
+  width: 100%;
+}
+
+.gsc-preview-reviews li {
+  list-style: none;
+  width: 90%;
+}
+
+.gsc-zippy {
+  margin: 2px 8px 0px 0px;
+  float: right;
+  outline: none;
+  overflow: hidden;
+  height: 14px;
+  width: 14px;
+  background-position: -19px -5px;
+  position: relative;
+  top: -6px;
+}
+
+.gsc-table-cell-snippet-close .gsc-preview-reviews {
+  display: none;
+}
+
+.gsc-table-cell-snippet-close .gsc-zippy {
+  background: transparent /*savepage-url=/cse/static/css/plus_icons.png*/ url() -19px -5px no-repeat;
+}
+
+.gsc-table-cell-snippet-open .gsc-zippy {
+  background: transparent /*savepage-url=/cse/static/css/minus_icons.png*/ url() -19px -5px no-repeat;
+}
+
+/*
+ * Cross-browser implementation of the "display: inline-block" CSS property.
+ * See http://www.w3.org/TR/CSS21/visuren.html#propdef-display for details.
+ */
+/* Gecko hack */
+html>body .gsc-inline-block {
+  display: -moz-inline-box;
+  display: inline-block;
+}
+
+/* Default rule */
+.gsc-inline-block {
+  position: relative;
+  display: inline-block;
+}
+
+/* Pre-IE7 IE hack */
+* html .gsc-inline-block {
+  display: inline;
+}
+
+/* IE7-only hack */
+*:first-child+html .gsc-inline-block {
+  display: inline;
+}
+
+/* By default show url at the bottom of the snippet */
+.gsc-url-top {
+  display: none;
+}
+
+.gsc-url-bottom {
+  display: block;
+}
+
+/* By default show thumbnail at the left of the snippet */
+.gsc-thumbnail-left {
+  display: block;
+}
+
+.gsc-thumbnail-inside {
+  display: none;
+}
+
+/* CSS for labeling search results feature. */
+.gsc-label-result-main-box-visible {
+  position: fixed !important;
+  z-index: 100003;
+  background-color: rgba(255, 255, 255, 1);
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px 0px;
+  opacity: 1;
+  display: block;
+  border: none;
+  margin: auto;
+  -webkit-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -ms-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -o-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  border-collapse: separate;
+  background: white;
+  padding: 30px;
+  width: 28%;
+  top: 30%;
+  left: 35%;
+  border: 1px solid rgba(0,0,0,.333);
+}
+
+.gsc-label-result-main-box-invisible {
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888');
+}
+
+.gsc-label-result-url {
+  padding-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  color: #008000;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.gsc-label-result-url-title {
+  white-space: nowrap;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #0000CC;
+  text-decoration: underline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+.gsc-label-result-url-heading {
+  margin-bottom: 15px;
+}
+
+.gsc-label-result-labels {
+  vertical-align: text-top;
+  font-size: 13px;
+  color: #000;
+}
+
+.gsc-label-checkbox {
+}
+
+.gsc-label-box {
+  margin-top: 5px;
+}
+
+.gsc-labels-box {
+  margin-top: 15px;
+}
+
+.gsc-label-result-buttons {
+  margin-top: 20px;
+}
+
+.gsc-labels-no-label-div-visible {
+  margin-top: 20px;
+}
+
+.gsc-labels-no-label-div-invisible {
+  display: none;
+}
+
+.gsc-labels-label-div-visible {
+  margin-top: 10px;
+}
+
+.gsc-labels-label-div-invisible {
+  display: none;
+}
+
+.gsc-label-result-form-label {
+  margin-right: 20px;
+  margin-left: 2px;
+  font-size: 13px;
+  color: #000;
+  vertical-align: text-top;
+}
+
+.gsc-label-result-form-div {
+  margin-top: 5px;
+}
+
+input.gsc-label-result-label-prefix-visible {
+  width: 90%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+input.gsc-label-result-label-prefix-invisible {
+  display: none;
+}
+
+.gsc-label-result-label-prefix-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.gsc-label-result-label-prefix-error-invisible {
+  display: none;
+}
+
+.gsc-label-result-heading {
+  font-size: 17px;
+  color: black;
+}
+
+.gsc-result-label-button {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  border-radius: 2px;
+  text-align: center;
+  padding: 0 8px;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  height: 29px;
+  border: 1px solid #dcdcdc;
+  border-color: rgba(0, 0, 0, .1);
+  color: #444;
+  margin-right: 10px;
+  width: 72px;
+}
+
+.gsc-result-label-save-button {
+  color: #fff;
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: -ms-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: -o-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: linear-gradient(top,#4d90fe,#357ae8);
+}
+
+.gsc-add-label-error {
+  color: red;
+  padding-top: 20px;
+}
+
+.gsc-add-label-error-invisible {
+  display: none;
+}
+
+.gsc-label-results-close-btn-visible {
+  display: block;
+  opacity: 0.7;
+}
+
+.gsc-label-result-saving-popup {
+  font-size: 13px;
+  -webkit-transition: opacity 218ms;
+  -moz-transition: opacity 218ms;
+  -o-transition: opacity 218ms;
+  transition: opacity 218ms;
+  border-width: 1px;
+  height: 14px;
+  opacity: 1;
+  padding: 6px 16px;
+  background-color: #f9edbe;
+  border-color: #f0c36d;
+  color: #333;
+  position: fixed !important;
+  top: 10%;
+  left: 45%;
+  border-style: solid;
+  border-radius: 2px;
+}
+
+.gsc-label-result-saving-popup-invisible {
+  display: none;
+}
+
+/* CSS for richsnippets feature. */
+.gsc-richsnippet-popup-box {
+  position: fixed !important;
+  z-index: 100003;
+  background-color: rgba(255, 255, 255, 1);
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px 0px;
+  opacity: 1;
+  display: block;
+  border: none;
+  margin: auto;
+  -webkit-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -ms-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  -o-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+  border-collapse: separate;
+  background: white;
+  padding: 30px;
+  width: 25%;
+  top: 15%;
+  left: 25%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 65%;
+  width: 50%;
+  padding: 30px;
+  padding-bottom: 10px;
+ }
+
+.gsc-richsnippet-popup-box-invisible {
+  display: none;
+}
+
+.gsc-richsnippet-showsnippet-label {
+  color: #000099;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size:13px;
+}
+
+.gsc-richsnippet-individual-snippet-box {
+  border: 1px solid #ebebeb;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.gsc-richsnippet-individual-snippet-key {
+  font-size: 14px;
+  padding: 1px 0 6px;
+  color: #000099;
+}
+
+.gsc-richsnippet-individual-snippet-data {
+}
+
+.gsc-richsnippet-popup-box-title {
+ padding-bottom: 20px;
+ font-size: 15px;
+}
+
+.gsc-richsnippet-popup-box-title-text {
+  color: #404040;
+  display: inline;
+}
+
+.gsc-richsnippet-popup-box-title-url {
+  font-weight: bold;
+  color: black;
+  display: inline;
+}
+
+.gsc-richsnippet-individual-snippet-keyvalue {
+}
+
+.gsc-richsnippet-individual-snippet-keyelem {
+  display: inline;
+  font-weight: bold;
+}
+
+.gsc-richsnippet-individual-snippet-valueelem {
+  display: inline-block;
+  height: 1.1em;
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.gsc-richsnippet-popup-close-button {
+  background-image: /*savepage-url=//www.google.com/images/nav_logo114.png*/ url();
+  background-repeat: no-repeat;
+  background-position: -140px -230px;
+  float: right;
+  height: 12px;
+  width: 12px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.gsc-richsnippet-popup-box-contents {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 88%;
+}
+
+.gcsc-find-more-on-google {
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 2px;
+}
+
+.gcsc-find-more-on-google-magnifier {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.gcsc-find-more-on-google-text {
+  vertical-align: middle;
+}
+
+.gcsc-find-more-on-google-query {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.gcsc-find-more-on-google-branding {
+  display: inline-block;
+  float: right;
+}
+</style><style data-savepage-href="https://www.google.com/cse/static/style/look/v2/default.css" type="text/css">/**
+ * Default Theme, v2.
+ *
+ */
+/* Slight reset to make the preview have ample padding. */
+.cse .gsc-control-cse,
+.gsc-control-cse {
+  padding: 1em;
+  width: auto;
+}
+.cse .gsc-control-wrapper-cse,
+.gsc-control-wrapper-cse {
+  width: 100%;
+}
+.cse .gsc-branding,
+.gsc-branding {
+  display: none;
+}
+/* Selector for entire element. */
+.cse .gsc-control-cse,
+.gsc-control-cse {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.cse .gsc-control-cse:after,
+.gsc-control-cse:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.cse .gsc-resultsHeader,
+.gsc-resultsHeader {
+  border: block;
+}
+table.gsc-search-box td.gsc-input {
+  padding-right: 24px;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+  padding-right: 12px;
+}
+
+input.gsc-input {
+  font-size: 16px;
+}
+/* Hide clear input X added by MSIE. */
+.gsc-input::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.gsc-input-box {
+  border: 1px solid #D9D9D9;
+  background: #fff;
+}
+
+.gsc-search-box .gsc-input>input:hover,
+.gsc-input-box-hover {
+  border: 1px solid #b9b9b9;
+  border-top-color: #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  outline: none;
+}
+.gsc-search-box .gsc-input>input:focus,
+.gsc-input-box-focus {
+  border: 1px solid #4d90fe;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  outline: none;
+}
+
+/* Search button */
+.cse .gsc-search-button-v2,
+.gsc-search-button-v2 {
+  font-size: 0px;
+  padding: 6px 27px;
+  width: auto;
+  vertical-align: middle;
+
+  border: 1px solid #666666;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+
+  border-color: #3079ed;
+  background-color: #4d90fe;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));
+  background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: linear-gradient(top,#4d90fe,#4787ed);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#4787ed');
+}
+
+.cse .gsc-search-button-v2:hover,
+.gsc-search-button-v2:hover {
+  border-color: #2f5bb7;
+  background-color: #357ae8;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: -ms-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: -o-linear-gradient(top,#4d90fe,#357ae8);
+  background-image: linear-gradient(top,#4d90fe,#357ae8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#357ae8');
+}
+
+.cse .gsc-search-button-v2:focus,
+.gsc-search-button-v2:focus {
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+  -moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+}
+
+.gsc-search-button-v2 svg {
+  fill: #fff;
+}
+
+/* Firefox button fix */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+.gsc-refinementHeader {
+  text-decoration: none;
+  font-weight: bold;
+  color: #666;
+}
+
+.gsc-refinementHeader.gsc-refinementhActive {
+  text-decoration: none;
+  color: #DD4B39;
+}
+
+.gsc-refinementHeader.gsc-refinementhInactive {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gsc-refinementHeader.gsc-refinementhInactive>span:hover {
+  text-decoration: underline;
+}
+
+.gsc-refinementhActive>span {
+  border-bottom: 3px solid;
+  padding-bottom: 2px;
+}
+
+.gsc-refinementsArea {
+  margin-top: 0;
+  padding-bottom: 4px;
+  padding-top: 10px;
+}
+
+/* Foont size for refinements */
+.gsc-tabsArea {
+  font-size: 11px;
+}
+/* For searcher tabs */
+.gsc-tabsArea > .gsc-tabHeader {
+  height: 27px;
+}
+.gsc-tabsArea > div {
+  height: 30px;
+  overflow: auto;
+}
+/* No spacers needed for keneddy refinements */
+.gsc-tabsArea .gs-spacer {
+  display: none;
+}
+.gsc-tabsArea .gs-spacer-opera {
+  display: none;
+}
+.gsc-tabsArea {
+  margin-top: 12px;
+  margin-bottom: 0;
+  height: 29px;
+  border-bottom: 1px solid #CCC;
+}
+/* Refinement tab properties */
+.gsc-tabHeader {
+  display: inline-block;
+  padding: 0 8px 1px 8px;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+}
+/* Active refinement tab properties */
+.gsc-tabHeader.gsc-tabhActive {
+  border: 1px solid #ccc;
+  border-bottom-color: #fff;
+  color: #202020;
+}
+/* Inactive refinement tab properties */
+.gsc-tabHeader.gsc-tabhInactive {
+  background: #fff;
+  color: #666;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+/* Inner wrapper for an image result */
+.gsc-imageResult-column,
+.gsc-imageResult-classic {
+  padding: .25em;
+  border: 1px solid #fff;
+  margin-bottom: 1em;
+}
+/* Inner wrapper for a result */
+.gsc-webResult.gsc-result {
+  padding: .25em;
+  border: 1px solid #fff;
+  margin-bottom: 0;
+}
+/* Inner wrapper for a result */
+.cse .gsc-webResult.gsc-result {
+  border: 1px solid #fff;
+  margin-bottom: 0;
+}
+/* Wrapper for a result. */
+.gsc-webResult .gsc-result {
+  padding: 10px 0 10px 0;
+}
+/* Result hover event styling */
+.cse .gsc-webResult.gsc-result:hover,
+.gsc-webResult.gsc-result:hover,
+.gsc-webResult.gsc-result.gsc-promotion:hover,
+.gsc-results .gsc-imageResult-classic:hover,
+.gsc-results .gsc-imageResult-column:hover {
+  border: 1px solid #fff;
+}
+.gs-web-image-box,
+.gs-promotion-image-box {
+  padding: 2px 0;
+}
+.gs-promotion-image-box img.gs-promotion-image {
+  max-width: 50px;
+}
+.gs-promotion-image-box img.gs-promotion-image,
+.gs-promotion-image-box {
+  width: 50px;
+}
+.gs-web-image-box img.gs-image {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.gs-web-image-box-landscape img.gs-image {
+  max-width: 70px;
+  max-height: 50px;
+}
+
+.gs-web-image-box-portrait img.gs-image {
+  max-width: 50px;
+  max-height: 120px;
+}
+
+.gs-image-box.gs-web-image-box.gs-web-image-box-landscape {
+  width: 80px;
+}
+
+.gs-image-box.gs-web-image-box.gs-web-image-box-portrait {
+  width: 60px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.gs-web-image-box {
+  text-align: inherit;
+}
+.gs-promotion-image-box img.gs-promotion-image {
+  border: 1px solid #ebebeb;
+}
+/*Promotion Settings*/
+/* The entire promo */
+.cse .gsc-webResult.gsc-result.gsc-promotion,
+.gsc-webResult.gsc-result.gsc-promotion {
+  background-color: #F6F6F6;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.gsc-result-info {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 8px;
+  padding-bottom: 10px;
+}
+.gs-promotion-text-cell .gs-visibleUrl,
+.gs-promotion-text-cell .gs-snippet {
+  font-size: 13px;
+}
+
+.gsc-table-result,
+.gsc-thumbnail-inside,
+.gsc-url-top {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.gs-promotion-table {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.gs-promotion table {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+table.gs-promotion-table-snippet-with-image{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gs-promotion-text-cell {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.gs-promotion-text-cell-with-image {
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+/* Promotion links */
+.cse .gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link,
+.cse .gs-promotion a.gs-title:link *,
+.gs-promotion a.gs-title:link *,
+.cse .gs-promotion .gs-snippet a:link,
+.gs-promotion .gs-snippet a:link {
+  color: #15C;
+}
+.cse .gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited,
+.cse .gs-promotion a.gs-title:visited *,
+.gs-promotion a.gs-title:visited *,
+.cse .gs-promotion .gs-snippet a:visited,
+.gs-promotion .gs-snippet a:visited {
+  color: #15C;
+}
+.cse .gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover,
+.cse .gs-promotion a.gs-title:hover *,
+.gs-promotion a.gs-title:hover *,
+.cse .gs-promotion .gs-snippet a:hover,
+.gs-promotion .gs-snippet a:hover {
+  color: #15C;
+}
+.cse .gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active,
+.cse .gs-promotion a.gs-title:active *,
+.gs-promotion a.gs-title:active *,
+.cse .gs-promotion .gs-snippet a:active,
+.gs-promotion .gs-snippet a:active {
+  color: #15C;
+}
+/* Promotion snippet */
+.cse .gs-promotion .gs-snippet,
+.gs-promotion .gs-snippet,
+.cse .gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.cse .gs-promotion .gs-title .gs-promotion-title-right *,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+  color: #000;
+}
+/* Promotion url */
+.cse .gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl {
+  color: #093;
+}
+/* Style for auto-completion table
+ * .gsc-completion-selected : styling for a suggested query which the user has moused-over
+ * .gsc-completion-container : styling for the table which contains the completions
+ */
+.gsc-completion-selected {
+  background: #EEE;
+}
+
+.gsc-completion-container {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: white;
+  border: 1px solid #CCC;
+  border-top-color: #D9D9D9;
+  margin: 0;
+}
+
+.gsc-completion-title {
+  color: #15C;
+}
+.gsc-completion-snippet {
+  color: #000;
+}
+
+/* Full URL */
+.gs-webResult div.gs-visibleUrl-short,
+.gs-promotion div.gs-visibleUrl-short {
+  display: none;
+}
+.gs-webResult div.gs-visibleUrl-long,
+.gs-promotion div.gs-visibleUrl-long {
+  display: block;
+}
+
+/* Keneddy shows url at the top of the snippet, after title */
+.gsc-url-top {
+  display: block;
+}
+
+.gsc-url-bottom {
+  display: none;
+}
+
+/* Keneddy shows thumbnail inside the snippet, under title and url */
+.gsc-thumbnail-left {
+  display: none;
+}
+
+.gsc-thumbnail-inside {
+  display: block;
+}
+
+.gsc-result .gs-title {
+  height: 1.2em;
+}
+
+.gs-result .gs-title,
+.gs-result .gs-title * {
+  color: #15C;
+}
+
+.gs-result a.gs-visibleUrl,
+.gs-result .gs-visibleUrl {
+  color: #093;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.gsc-results .gsc-cursor-box {
+  margin: 10px;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+  text-decoration: none;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page:hover {
+  text-decoration: underline;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  text-decoration: none;
+  color: #DD4B39;
+}
+
+.gsc-preview-reviews,
+.gsc-control-cse .gs-snippet,
+.gsc-control-cse .gs-promotion em,
+.gsc-control-cse .gs-snippet,
+.gsc-control-cse .gs-promotion em {
+  color: #333;
+}
+
+.gsc-control-cse-zh_CN .gs-snippet b,
+.gsc-control-cse-zh_CN .gs-promotion em,
+.gsc-control-cse-zh_TW .gs-snippet b,
+.gsc-control-cse-zh_TW .gs-promotion em {
+  color: #C03;
+}
+
+.gsc-snippet-metadata,
+.gsc-role,
+.gsc-tel,
+.gsc-org,
+.gsc-location,
+.gsc-reviewer,
+.gsc-author {
+  color: #666;
+}
+
+.gsc-wrapper.gsc-thinWrapper {
+  border-right: 1px solid #e9e9e9;
+}
+
+.gs-spelling a {
+  color: #15C;
+}
+
+.gs-spelling {
+  color: #333;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.gs-snippet {
+  margin-top: 1px;
+}
+
+div.gsc-clear-button {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/v2/clear.png*/ url();
+}
+
+div.gsc-clear-button:hover {
+  background-image: /*savepage-url=//www.google.com/cse/static/css/v2/clear-hover.png*/ url();
+}
+
+.gsc-preview-reviews ul {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gsc-completion-container .gsc-completion-icon-cell {
+  width: 42px;
+  height: 42px;
+  padding-right: 10px;
+}
+
+.gsc-branding-text, .gcsc-branding-text {
+  color: #666;
+}
+
+.gcsc-branding {
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.gsc-adBlock {
+  padding-bottom: 5px;
+}
+
+.gsc-table-cell-snippet-close,
+.gsc-table-cell-snippet-open {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gsc-selected-option-container {
+  background-color: whiteSmoke;
+  background-image: linear-gradient(top,whiteSmoke,#F1F1F1);
+  background-image: -webkit-linear-gradient(top,whiteSmoke,#F1F1F1);
+  background-image: -moz-linear-gradient(top,whiteSmoke,#F1F1F1);
+  background-image: -ms-linear-gradient(top,whiteSmoke,#F1F1F1);
+  background-image: -o-linear-gradient(top,whiteSmoke,#F1F1F1);
+}
+
+/* Facet box css */
+.gsc-context-box {
+  font-size: 83%;
+  margin-top: 3px;
+  border-collapse: collapse;
+}
+
+.gsc-context-box .gsc-col {
+  padding:1px 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.gsc-context-box .gsc-facet-label {
+  width: 65px;
+  padding-left: 2px;
+  text-decoration: underline;
+  color: #0000cc;
+  cursor: pointer;
+}
+
+.gsc-context-box .gsc-chart {
+  width: 32em;
+  padding: 3px;
+  border-left: 1px solid #0000cc;
+  border-right: 1px solid #0000cc;
+}
+
+.gsc-context-box .gsc-top {
+  border-top: 1px solid #0000cc;
+}
+
+.gsc-context-box .gsc-bottom {
+  border-bottom: 1px solid #0000cc;
+}
+
+.gsc-context-box .gsc-chart div {
+  background: #0000cc;
+  height: 9px;
+}
+
+.gsc-context-box .gsc-facet-result {
+  color: #0000cc;
+  width: 30px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+/* Universal one box css. */
+.gsc-usr-group-thumbnail {
+  display: inline-block;
+  max-width: 72px;
+  max-height: 72px;
+}
+.gsc-usr-group-thumbnail img {
+  max-height: 72px;
+  overflow: hidden;
+}
+.gs-webResult .gs-title
+.gs-title.gsc-usr-group-heading {
+  color: #0000cc;
+  cursor: pointer;
+}
+.gsc-usr-group {
+  min-height: 100px;
+  zoom: 1;
+  display: block;
+  line-height: 1.24;
+  margin-top: -7px;
+  margin-bottom: -7px;
+  margin-left: 20px;
+}
+.gsc-usr-group-content {
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+.gsc-usr-group-content-thumbnail {
+  display: inline-block;
+  vertical-align: top;
+}
+.gsc-usr-group-head-result {
+  display: inline-block;
+  padding-left: 6px;
+}
+.gsc-usr-group-snippet {
+  width: 100%;
+  height: 3.6em;
+  overflow: hidden;
+}
+.gsc-usr-group-content-results {
+  font-size: 12px;
+  padding-left: 1px;
+  width: 80%;
+  padding-top: 7px;
+}
+.gsc-usr-group-head-results {
+  display:inline-block;
+  font-size: 13px;
+  padding-left: 6px;
+  width: 80%;
+}
+.gs-webResult .gs-title
+.gs-title.gsc-usr-group-all-results {
+  font-size: 11px;
+  line-height: 10px;
+}
+.gs-webResult .gs-title
+.gs-title.gsc-usr-group-all-results
+b {
+  font-size: 14px;
+  font-weight: 600;
+}
+.gs-webResult .gs-title
+.gs-title.gsc-usr-group-heading
+b {
+  color: #0000cc;
+}
+
+.gcsc-find-more-on-google {
+  color: #0000cc;
+}
+
+.gcsc-find-more-on-google-magnifier {
+  fill: #0000cc;
+}
+</style><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:5.5px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><style></style>
+    <script id="savepage-pageloader" type="application/javascript">
+      savepage_PageLoader(5);
+      "use strict";function savepage_PageLoader(maxframedepth){var resourceMimeType=new Array();var resourceBase64Data=new Array();var resourceBlobUrl=new Array();window.addEventListener("DOMContentLoaded",function(a){createBlobURLs();replaceReferences(0,document.documentElement)},false);function createBlobURLs(){var i,j,binaryString,blobData;var a=new Array();for(i=0;i<resourceMimeType.length;i++){if(typeof resourceMimeType[i]!="undefined"){binaryString=atob(resourceBase64Data[i]);resourceBase64Data[i]="";a.length=0;for(j=0;j<binaryString.length;j++){a[j]=binaryString.charCodeAt(j)}blobData=new Blob([new Uint8Array(a)],{type:resourceMimeType[i]});resourceMimeType[i]="";resourceBlobUrl[i]=window.URL.createObjectURL(blobData)}}}function replaceReferences(a,b){var i,regex1,regex2,csstext,blobData;regex1=/url\(\s*((?:"[^"]+")|(?:'[^']+')|(?:[^\s)]+))\s*\)/gi;regex2=/data:[^;]*;resource=(\d+);base64,/i;if(b.hasAttribute("style")){csstext=b.style.cssText;b.style.cssText=csstext.replace(regex1,replaceCSSRef)}if(b.localName=="style"){csstext=b.textContent;b.textContent=csstext.replace(regex1,replaceCSSRef)}else if(b.localName=="link"&&(b.rel.toLowerCase()=="icon"||b.rel.toLowerCase()=="shortcut icon")){if(b.href!="")b.href=b.href.replace(regex2,replaceRef)}else if(b.localName=="body"){if(b.background!="")b.background=b.background.replace(regex2,replaceRef)}else if(b.localName=="img"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="input"&&b.type.toLowerCase()=="image"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="audio"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}}else if(b.localName=="video"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}if(b.poster!="")b.poster=b.poster.replace(regex2,replaceRef)}else if(b.localName=="source"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.parentElement.load()}}else if(b.localName=="track"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="object"){if(b.data!="")b.data=b.data.replace(regex2,replaceRef)}else if(b.localName=="embed"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}if(b.localName=="iframe"||b.localName=="frame"){if(a<maxframedepth){if(b.hasAttribute("data-savepage-sameorigin")){blobData=new Blob([decodeURIComponent(b.src.substr(29))],{type:"text/html;charset=utf-8"});b.onload=function(){try{if(b.contentDocument.documentElement!=null){replaceReferences(a+1,b.contentDocument.documentElement)}}catch(e){}};b.src=window.URL.createObjectURL(blobData)}}}else{for(i=0;i<b.childNodes.length;i++){if(b.childNodes[i]!=null){if(b.childNodes[i].nodeType==1)replaceReferences(a,b.childNodes[i])}}}}function replaceCSSRef(a,b,c,d){var e=new Array();e=b.match(/data:[^;]*;resource=(\d+);base64,/i);if(e!=null)return"url("+resourceBlobUrl[+e[1]]+")";else return a}function replaceRef(a,b,c,d){return resourceBlobUrl[+b]}
+      }
+    </script>
+    <meta name="savepage-url" content="https://www.rapidtables.com/calc/math/Arctan_Calculator.html">
+    <meta name="savepage-title" content="Arctan(x) Calculator | Inverse tangent calculator">
+    <meta name="savepage-date" content="Thu Dec 20 2018 13:56:11 GMT+0100 (stredoeurópsky štandardný čas)">
+    <meta name="savepage-state" content="Standard Items; Used page loader; Retained cross-origin frames; Removed unsaved URLs; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+    <meta name="savepage-version" content="12.6">
+    <meta name="savepage-comments" content=""></head>
+
+<body><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override--164332451 cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies. By using this website you accept the use of cookies. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.rapidtables.com/about/privacy.html" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div>
+
+<div id="header">
+	<div>
+	<div id="logo" class="box">
+		<p>
+			<a href="/">RapidTables</a>
+		</p>
+	</div>
+	<div class="box">
+	<div class="gcse-searchbox">
+		<script></script>
+		<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input value="" autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" placeholder="Custom Search" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: /*savepage-url=https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png*/ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAQCAQAAADDwIVhAAAB7klEQVR4AdWUA7BWURSF+5Ft27Zt27ZtW4Ns29aX7Rpl1yDbrrvbc6Zn+73LhXvWPY4U8Q9i0pQtnGUTdYgZwLIOSlEYu092Hm7wgwOs4RACAQyPwWm2EdV7MxaPuEZBoimORlHKBTA8OodY51N4L/5QxlvHqQVtrsymzOnOjUI0j+HYiInNY8QJzhPHoITkIbc5YxGXRYieL2lhvBaKBEvVuMoycxzhK6d4TwHQcAcNzRdf6Ok+/BqHcZr/9kPM+ZXK7OIvrSnBfISaeoqiEqr8VScG57lDdapwGaEo+1hJcSxWkJ3ZCB3cwjdyi1QGxSMLmSiM0J8vTP/vv2CDni/+s+nqdEIjDauHUETDF7FM9Roc4A/nKO0WXgahh9tUYhAvacY3Rv3n99ip573/bJQ6/REyGFYBy4QvZD3CDzaQ0dM8VUuYQFFT63EIU01nPSE/SeiI0E1PUZRElSdcJQ2P2ElGfW/6X/Pl1EGYSQwyM4MCHmfqEP7yg1f8QhhoRj4zd7B4gjAPh57zEGWWqpnUrc4P3vKaFwhFOckOojAC4SkfeU4ur+usPO2oSBQPK681qVx5KmWlcPxn0WhIOdogZCSRnjbVUtKSykHfLLaxgmQkZzevgn8vqs9rPvCe51QK/nAb8SlEERL6/M0/SoB55gUBIU8AAAAASUVORK5CYII=) left center no-repeat rgb(255, 255, 255); text-indent: 48px; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results"> </div></td></tr></tbody></table></form></div></div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<div id="wrapper">
+
+<div id="nav">
+	<!-- #BeginEditable "doclink" -->
+	<a href="/">Home</a>›<a href="../index.html">Calculators</a>›<a href="index.html">Math Calculators</a>› Arctan calculator
+	<!-- #EndEditable -->
+</div>
+
+<div id="top-ad">
+	<script async="" data-savepage-src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" src=""></script>
+	<!-- RT above responsive -->
+	<ins class="adsbygoogle adslot_1" data-ad-client="ca-pub-5335356106950684" data-ad-slot="6506963100"></ins>
+	<script></script>
+</div>
+	
+<div id="lcol">
+
+	<div id="doc">
+	<!-- #BeginEditable "doctext" -->
+	<h1>Arctan Calculator</h1>
+	<p>Online <a href="/math/trigonometry/arctan.html">arctan(x)</a> calculator. Inverse tangent calculator.</p>
+	<form name="calcform">
+	<table class="calc">
+	  <tbody>
+	  <tr>
+		<td><span>arctan</span> <input value="-3.2345115" type="text" name="x" class="intext" autofocus="" tabindex="1"> <input onclick="calc()" type="button" value=" = " class="btn"></td>
+	  </tr>
+	  <tr>
+	  	<td>
+			<button type="button" title="Calculate" class="btn" tabindex="2" onclick="calcfunc()"><img data-savepage-src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_018_cog.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJEQjBEN0ZDREI0NDExRTJBOUVDQkQ3OEMyMTU0NzU0IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJEQjBEN0ZCREI0NDExRTJBOUVDQkQ3OEMyMTU0NzU0IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdiZjkxM2UzLTEzNWItNGQwOS04YTc3LWEyMzZmZmFlYTk5NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1Q0Q2MEUzMTA5MjA2ODExODNEMUIxMDhENDc5RkUwOCIvPiA8ZGM6dGl0bGU+IDxyZGY6QWx0PiA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmdseXBoaWNvbnNfaGFsZmxpbmdzPC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzp0aXRsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5jV9rrAAAAtklEQVR42mL8//8/AzqQk5M5AKIfPXrigC7HCNIAVCAAZE+AYgUgXg+VDwTiC0DcAMQFQAM+wDQsAArEM+AHC4EaEmAaQKbeJ6BBEajhAROUY4AkcRCIBaH4IJI4WA2jrKw0yIP2SBKCILdCPQ/y23tkw5gYSAQwPwQghQzIGQFQ9gYk2wOBNm9ggXIuIBlij+YMBmQ1MCc1EOGaBmQNBaBwBgUdNLIYkCJOESpXAPcDKUkDIMAArwtC7wXingIAAAAASUVORK5CYII=" alt=""> Calculate</button>
+			<button type="reset" title="Reset" class="btn" tabindex="3" onclick="setfocus()"><img data-savepage-src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU1RENDMjA4REI0MzExRTJBOUVDQkQ3OEMyMTU0NzU0IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU1RENDMjA3REI0MzExRTJBOUVDQkQ3OEMyMTU0NzU0IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdiZjkxM2UzLTEzNWItNGQwOS04YTc3LWEyMzZmZmFlYTk5NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1Q0Q2MEUzMTA5MjA2ODExODNEMUIxMDhENDc5RkUwOCIvPiA8ZGM6dGl0bGU+IDxyZGY6QWx0PiA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmdseXBoaWNvbnNfaGFsZmxpbmdzPC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzp0aXRsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5qKnidAAAAjUlEQVR42oyQ3Q2AMAiEkThA3/1ZQUdwEx2tbuII7QrGAdygcopRGx68hAbIV3qUU0rUNJWXCBIOtfac9jzqAgkRjXQpSgyaLxKd5nMpR0+POgXoBUE964SYwW/ofIXXddsN+AOBYfopLOMy4+ZUNqBoeF4Ahvy24TkU+My2rb1+06DLoXdbCtKbDgEGAIHuOO/mpkzyAAAAAElFTkSuQmCC" alt=""> Reset</button>
+	  	</td>
+	  </tr>
+	  <tr>
+		<td colspan="3">Angle in degrees:</td>
+	  </tr>
+	  <tr>
+	    <td colspan="3"><input value="-72.82018515" type="text" id="y1" name="y1" tabindex="4" class="outtext" readonly=""> °</td>
+	  </tr>
+	  <tr>
+		<td colspan="3">Angle in radians:</td>
+	  </tr>
+	  <tr>
+	    <td colspan="3"><input value="-1.27095199" type="text" id="y2" name="y2" tabindex="5" class="outtext" readonly=""> rad</td>
+	  </tr>
+	  <tr>
+		<td>Calculation:</td>
+	  </tr>
+	  <tr>
+		<td colspan="8"><textarea rows="9" name="TA1" class="outtext" readonly="" tabindex="6">arctan -3.2345115 = tan⁻¹ -3.2345115 = -72° -49' -12.667"
+= -72.82018515°+k×180° (k=..-1,0,1,..)
+= -252.82018515°, -72.82018515°, 107.17981485°, ..
+= -1.27095199rad+k×π (k=..-1,0,1,..)
+= -1.40455658π, -0.40455658π, 0.59544342π, ..</textarea></td>
+	  </tr>
+	  </tbody>
+	</table>
+	</form>			
+	<p><a href="Tan_Calculator.html">Tangent calculator ►</a></p>
+	<h2><a name="definition"></a>Arctangent definition</h2>
+	<p>The arctangent function is the inverse function of y = tan(x).</p>
+	<p class="math">arctan(<i>y</i>) = tan<sup>-1</sup>(<i>y</i>) = <i>x</i>+ <i>kπ</i></p>
+	<p>For every</p>
+	<p class="math"><i>k </i>= {...,-2,-1,0,1,2,...}</p>
+	<p> </p>
+	<p>For example, If the tangent of 45° is 1:</p>
+	<p class="mathsymbol">tan(45°) = 1</p>
+	<p>Then the arctangent of 1 is 45°:</p>
+	<p class="mathsymbol">arctan(1) = tan<sup>-1</sup>(1) = 45°</p>
+	<h2><a name="table"></a>Arctangent table</h2>
+	<table class="dtable">
+		<tbody><tr>
+			<th rowspan="2">y</th>
+			<th colspan="2">x = arctan(y)</th>
+		</tr>
+		<tr>
+			<th>degrees</th>
+			<th>radians</th>
+		</tr>
+		<tr>
+			<td>-1.732050808</td>
+			<td>-60°</td>
+			<td>-π/3</td>
+		</tr>
+		<tr>
+			<td>-1</td>
+			<td>-45°</td>
+			<td>-π/4</td>
+		</tr>
+		<tr>
+			<td>-0.577350269</td>
+			<td>-30°</td>
+			<td>-π/6</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0°</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>0.577350269</td>
+			<td>30°</td>
+			<td>π/6</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>45°</td>
+			<td>π/4</td>
+		</tr>
+		<tr>
+			<td>1.732050808</td>
+			<td>60°</td>
+			<td>π/3</td>
+		</tr>
+	</tbody></table>
+	<h2><a name="on"></a>Arctan on calculator</h2>
+	<p>In order to calculate arctan(y) on a calculator:</p>
+	<ol>
+		<li>Press shift+tan buttons.</li>
+		<li>Enter the angle.</li>
+		<li>Press the = button.</li>
+	</ol>
+	<p><a href="Tan_Calculator.html">Tangent calculator ►</a></p>
+	<p> </p>
+	<hr>
+	<h2>See also</h2>
+	<ul>
+		<li><a href="/math/trigonometry/arctan.html">Arctan function</a></li>
+		<li><a href="Tan_Calculator.html">Tangent calculator</a></li>
+		<li><a href="Sin_Calculator.html">Sine calculator</a></li>
+		<li><a href="Cos_Calculator.html">Cosine calculator</a></li>
+		<li><a href="Arcsin_Calculator.html">Arcsin calculator</a></li>
+		<li><a href="Arccos_Calculator.html">Arccos calculator</a></li>
+		<li><a href="trigonometry-calculator.html">Trigonometry calculator</a></li>
+	</ul>		
+	<!-- #EndEditable -->
+
+	<div id="ban-ad">
+		<ins class="adsbygoogle adslot_3" data-ad-client="ca-pub-5335356106950684" data-ad-slot="3065550301"></ins>
+		<script></script>
+	</div>
+	
+	<!-- #BeginEditable "doctext2" -->
+	<!-- #EndEditable -->
+	</div>
+	
+	<div id="fdbk">
+		<h2><a id="feedback"></a>Write how to improve this page</h2>
+		<form name="feedback" method="post" action="/lib/sendform.php">
+		<table>
+			<tbody><tr style="display:none"><td><input value="" type="text" name="URL" readonly="readonly"></td></tr>
+			<tr><td><input value="" type="text" name="Name" tabindex="50" placeholder="Your Name"></td></tr>
+			<tr><td><input value="" type="text" name="Email" tabindex="51" placeholder="your@email.com"></td></tr>
+			<tr><td><textarea name="Message" cols="50" rows="5" tabindex="52"></textarea></td></tr>
+			<tr><td><input type="button" value="Submit Feedback" name="Action" class="btn" tabindex="53" onclick="OnSubFb()"></td></tr>
+		</tbody></table>
+		</form>
+	</div>
+</div>
+
+<div id="rcol">	
+	<!-- RT aside responsive -->
+	<ins class="adsbygoogle adslot_2" data-ad-client="ca-pub-5335356106950684" data-ad-slot="2437938306"></ins>
+	<script></script>
+
+	<!-- #BeginEditable "docnav" -->
+	<h5>MATH CALCULATORS</h5>
+	<ul>
+		<li><a href="calculator.html">Online math calculator</a></li>
+		<li><a href="adding-fractions-calculator.html">Adding fractions calculator</a></li>
+		<li><a href="Add_Calculator.html">Addition calculator</a></li>
+		<li><a href="anti-log-calculator.html">Antilog calculator</a></li>
+		<li><a href="Arccos_Calculator.html">Arccos calculator</a></li>
+		<li><a href="Arcsin_Calculator.html">Arcsin calculator</a></li>
+		<li><a href="Arctan_Calculator.html">Arctan calculator</a></li>
+		<li><a href="convolution-calculator.html">Convolution calculator</a></li>
+		<li><a href="Cos_Calculator.html">Cosine calculator</a></li>
+		<li><a href="dividing-fractions-calculator.html">Dividing fractions calculator</a></li>
+		<li><a href="division-calculator.html">Division calculator</a></li>
+		<li><a href="exponential-growth-calculator.html">Exponential growth calculator</a></li>
+		<li><a href="Exponent_Calculator.html">Exponents calculator</a></li>
+		<li><a href="Factorial_Calculator.html">Factorial calculator</a></li>
+		<li><a href="fractions-calculator.html">Fractions calculator</a></li>
+		<li><a href="gcf-calculator.html">GCF calculator</a></li>
+		<li><a href="lcm-calculator.html">LCM calculator</a></li>
+		<li><a href="Ln_Calc.html">Ln calculator</a></li>
+		<li><a href="Log_Calculator.html">Log calculator</a></li>
+		<li><a href="multiplication-calculator.html">Multiplication calculator</a></li>
+		<li><a href="multiplying-fractions-calculator.html">Multiplying fractions calculator</a></li>
+		<li><a href="Percentage_Calculator.html">Percentage calculator</a></li>
+		<li><a href="percentage-change-calculator.html">Percentage change calculator</a></li>
+		<li><a href="percent-error-calculator.html">Percent error calculator</a></li>
+		<li><a href="percentage-increase-calculator.html">Precentage increase calculator</a></li>
+		<li><a href="pythagorean-calculator.html">Pythagorean theorem calculator</a></li>
+		<li><a href="Quadratic_Calculator.html">Quadratic equation solver</a></li>
+		<li><a href="random-number-generator.html">Random number generator</a></li>
+		<li><a href="ratio-calculator.html">Ratio calculator</a></li>
+		<li><a href="Root_Calculator.html">Root calculator</a></li>
+		<li><a href="scientific-notation-calculator.html">Scientific notation calculator</a></li>
+		<li><a href="simplifying-fractions-calculator.html">Simplifying fractions calculator</a></li>
+		<li><a href="Sin_Calculator.html">Sine calculator</a></li>
+		<li><a href="Square_Root_Calculator.html">Square root calculator</a></li>
+		<li><a href="standard-deviation-calculator.html">Standard deviation calculator</a></li>
+		<li><a href="subtracting-fractions-calculator.html">Subtracting fractions calculator</a></li>
+		<li><a href="subtraction-calculator.html">Subtraction calculator</a></li>
+		<li><a href="Tan_Calculator.html">Tangent calculator</a></li>
+		<li><a href="trigonometry-calculator.html">Trigonometry calculator</a></li>
+		<li><a href="weighted-average-calculator.html">Weighted average calculator</a></li>
+		<li><a href="variance-calculator.html">Variance calculator</a></li>
+	</ul>
+	<h5>RAPID TABLES</h5>
+	<ul>
+		<li><a href="mailto:?subject=RapidTables%20website&body=Please%20checkout%20this%20site:%20https://www.rapidtables.com">Recommend Site</a></li>
+		<li><a href="#feedback">Send Feedback</a></li>
+		<li><a href="/about/about.html">About</a></li>
+	</ul>
+	<!-- #EndEditable -->
+	
+</div>
+
+</div>
+
+<div id="footer">
+	<a href="/index.html">Home</a> | 
+	<a href="/web/index.html">Web</a> |
+	<a href="/math/index.html">Math</a> | 
+	<a href="/electric/index.html">Electricity</a> |
+	<a href="/calc/index.html">Calculators</a> | 
+	<a href="/convert/index.html">Converters</a> |
+	<a href="/tools/index.html">Tools</a>
+	<p>© <script></script>2018 
+	<a href="/">RapidTables.com</a> | 
+	<a href="/about/about.html" rel="nofollow">About</a> | 
+	<a href="/about/terms.html" rel="nofollow">Terms of Use</a> | 
+	<a href="/about/privacy.html" rel="nofollow">Privacy Policy</a>
+	</p>
+</div>
+
+<!-- #BeginEditable "docscript" -->
+<script data-savepage-src="../calc2.js" src=""></script>
+<script></script>
+<!-- #EndEditable -->
+
+<script data-savepage-src="/lib/feedback.js" src="" defer=""></script>
+
+
+
+<!-- #EndTemplate -->
+
+
+<table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 317px; display: none; top: 42px; left: 676px; position: absolute;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>
